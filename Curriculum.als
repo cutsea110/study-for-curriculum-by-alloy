@@ -29,4 +29,4 @@ sig 学生{
 
 pred show {
 }
-run show
+run show for 3 but 5 学年教育課程, 10 科目
