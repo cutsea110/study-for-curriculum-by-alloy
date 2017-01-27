@@ -23,7 +23,7 @@
 </node>
 
 <node shape="Inv Triangle" color="Red">
-   <type name="&#x79d1;&#x76ee;"/>
+   <type name="&#x79d1;&#x76ee;&#x7de8;&#x6210;"/>
 </node>
 
 <node shape="Parallelogram" color="Green">
