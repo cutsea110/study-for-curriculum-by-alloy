@@ -25,6 +25,11 @@ sig 関係{
 	子: one 学年教育課程
 }
 
+pred 初学年は同じ課程{
+	some x: 学年教育課程 | x.学年 = 1 and #x.~子.親 > 1 
+}
+
 pred show{
+	初学年は同じ課程[]
 }
 run show
