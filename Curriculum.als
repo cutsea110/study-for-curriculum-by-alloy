@@ -31,10 +31,12 @@ pred 初年度は同じ課程{
 	some x: 学年教育課程 | x.学年 = 1 and #x.~grades > 1
 }
 pred 常識的な教育課程{
-	no x: 教育課程 | x.編成.学年 = [1, 3]
+	-- 歯抜けはない.
+	no x: 教育課程 | let gs = x.grades.学年 | 1 in gs and 2 not in gs and 3 in gs
 }
 
 pred show {
 	初年度は同じ課程[]
+	常識的な教育課程[]
 }
 run show for 3 but 5 学年教育課程, 10 科目編成

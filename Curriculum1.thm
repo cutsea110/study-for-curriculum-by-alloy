@@ -1,0 +1,31 @@
+<?xml version="1.0"?>
+<alloy>
+
+<view nodetheme="Martha">
+
+<defaultnode/>
+
+<defaultedge/>
+
+<node>
+   <type name="Int"/>
+   <type name="String"/>
+   <type name="univ"/>
+   <type name="seq/Int"/>
+</node>
+
+<node shape="Ellipse" color="Yellow">
+   <type name="&#x5b66;&#x5e74;&#x6559;&#x80b2;&#x8ab2;&#x7a0b;"/>
+</node>
+
+<node shape="Parallelogram" color="Green">
+   <type name="&#x6559;&#x80b2;&#x8ab2;&#x7a0b;"/>
+</node>
+
+<edge layout="yes" label="">
+   <relation name="&#x5c5e;&#x3059;"> <type name="&#x5b66;&#x5e74;&#x6559;&#x80b2;&#x8ab2;&#x7a0b;"/> <type name="&#x6559;&#x80b2;&#x8ab2;&#x7a0b;"/> </relation>
+</edge>
+
+</view>
+
+</alloy>
