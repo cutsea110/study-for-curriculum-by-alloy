@@ -28,8 +28,13 @@ sig 関係{
 pred 初学年は同じ課程{
 	some x: 学年教育課程 | x.学年 = 1 and #x.~子.親 > 1 
 }
+pred 常識的な教育課程{
+	-- 歯抜けはない.
+	no x: 教育課程 | let gs = (x.~親.子).学年 | 1 in gs and 2 not in gs and 3 in gs
+}
 
 pred show{
 	初学年は同じ課程[]
+	常識的な教育課程[]
 }
-run show
+run show for 3 but 9 関係

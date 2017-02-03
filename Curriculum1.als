@@ -19,7 +19,6 @@ pred 初年度は同じ課程{
 	some x: 学年教育課程 | x.学年 = 1 and #x.属す > 1
 }
 
-
 pred show{
 	初年度は同じ課程[] -- not found , but it's trivial!
 }
