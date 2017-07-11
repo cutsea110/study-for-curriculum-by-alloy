@@ -26,7 +26,7 @@ sig 入試募集{
 }
 
 sig 評価項目 {
-  コード: code,
+  科目コード: code,
   素点範囲: scoreRange,
   乗数: weight,
   調整: offset,
