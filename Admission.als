@@ -15,16 +15,15 @@ sig 入試募集{
   募集元: one 学部課程学科コース,
   募集定員: Int,
 }{
-  -- 複数の入試制度から参照されることはない.
+  -- A01: 複数の入試制度から参照されることはない.
   no disj x, y: 入試制度 | this in x.募集 and this in y.募集
 }
 
-assert 入試募集の共有 {
-  no b: 入試募集 | some disj x, y: 入試制度 {
-     b in x.募集 and b in y.募集
-  }
+-- A01
+assert 入試募集の共有はない {
+  all x : 入試制度 | x.募集.~募集 in x
 }
-check 入試募集の共有
+check 入試募集の共有はない
 
 pred show {
 }
