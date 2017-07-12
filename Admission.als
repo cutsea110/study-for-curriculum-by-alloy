@@ -14,13 +14,13 @@ enum desired_order { D1, D2, D3, D4, D5 }
 
 sig 入試制度{
   年度: one 年度,
-  募集: set 入試募集,
+  募集: some 入試募集,
 }
 
 sig 入試募集{
   募集元: one 学部課程学科コース,
   募集定員: 定員,
-  評価基準: some 評価項目
+  評価基準: some 評価項目,
 }{
   -- A01: 入試募集には唯一の入試制度がいる
   -- こおfactをRDBのスキーマで実現する場合には,このテーブルに入試制度へのID(NOT NULL)を保持することに相当する.
@@ -69,4 +69,4 @@ check 出願の共有はない
 
 pred show {
 }
-run show for 3 but exactly 2 入試制度, exactly 3 志願者, 5 志願
+run show for 3 but exactly 2 入試制度, exactly 3 入試募集, exactly 3 志願者, 5 志願
