@@ -80,6 +80,35 @@ fact 同じ募集に複数出願を持つ志願者はいない {
   }
 }
 
-pred show {
+fact ひとつの出願が複数の入試制度に関係しない{
+  all s: 出願 | one s.~orig.希望.募集
 }
-run show for 3
+
+fact ひとつの入試制度に複数の出願をする志願者はいない{
+  no a: 志願者 | some disj s, s': 出願 | some n: 入試制度 {
+    a in s.出願者 and a in s'.出願者 and n in s.~orig.希望.募集 and n in s'.~orig.希望.募集
+  }
+}
+
+pred 併願している(x: 志願者){
+  -- 出願が2つ以上
+  #x.~出願者 > 1
+}
+pred 同時併願している(x: 志願者){
+  -- 出願詳細が2つ以上の出願がある
+  some s: x.~出願者 | #s.~orig > 1
+}
+pred 入試制度複数{
+  #入試制度 > 1
+}
+pred 志願者複数{
+  #志願者 > 1
+}
+
+pred show {
+  some x: 志願者 | 併願している[x]
+  some y: 志願者 | 同時併願している[y]
+  入試制度複数[]
+  志願者複数[]
+}
+run show for 4
