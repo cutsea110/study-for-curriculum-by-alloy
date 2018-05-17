@@ -13,6 +13,8 @@ enum 出欠状態 { 出席, 欠席, 未判定 }
 enum 必修選択区分 { 必修, 選択 }
 enum 隔週 { 奇, 偶 }
 enum Bool { True, False }
+enum 試験区分 { 通常, 追試, 再試 }
+enum 試験時期 { 前期中間, 前期末, 後期中間, 後期末 }
 
 sig 分類{
 	分類コード : Int,
@@ -119,6 +121,19 @@ sig 履修{
 fact どんな学生もひとつの時間割を重複して履修できない{
 	no t:this/時間割 | some s:this/学生 | some disj r,r':履修 |
 		s in r.履修者 and s in r'.履修者 and t in r.時間割 and t in r'.時間割
+}
+
+sig 試験成績{
+	学生 : 学生,
+	時間割 : 時間割,
+	区分 : 試験区分,
+	期 : 試験時期,
+	評価 : Int,
+}
+
+sig 成績{
+	学生 : 学生,
+	科目 : 科目,
 }
 
 pred show{
