@@ -12,6 +12,7 @@ enum 曜日時限 { 月1, 月2, 月3, 月4, 月5, 月6, 月7, 月8,
 enum 出欠状態 { 出席, 欠席, 未判定 }
 enum 必修選択区分 { 必修, 選択 }
 enum 隔週 { 奇, 偶 }
+enum Bool { True, False }
 
 sig 分類{
 	分類コード : Int,
@@ -24,11 +25,11 @@ sig 分野{
 abstract sig 要件 {
 	要件コード : one Int,
 }
-sig 卒業 extends 要件{
+sig 卒業要件 extends 要件{
 }
-sig 資格 extends 要件{
+sig 資格要件 extends 要件{
 }
-sig 教職 extends 資格{
+sig 教職要件 extends 資格要件{
 }
 
 sig 学部学科{
@@ -47,6 +48,7 @@ sig 学則{
 	配当学年 : set Int,
 	必修選択 : one 必修選択区分,
 	適用要件 : lone 要件,
+	強制フラグ : one Bool,
 }{
 	配当学年 in (1 + 2 + 3 + 4)
 	0 <= 単位 and 単位 <= 4
@@ -70,8 +72,8 @@ sig 学生{
 	年次 : one Int,
 	所属 : one 学部学科,
 	適用教育課程 : one カリキュラム,
-	卒業要件 : one 卒業,
-	取得要件 : set 資格,
+	卒業 : one 卒業要件,
+	資格 : set 資格要件,
 }{
 	年次 in (0 + 1 + 2 + 3 + 4)
 }
