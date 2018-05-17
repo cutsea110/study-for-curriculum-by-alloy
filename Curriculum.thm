@@ -207,6 +207,7 @@
 <edge visible="no" attribute="yes">
    <relation name="&#x30b3;&#x30fc;&#x30b9;"> <type name="&#x5b66;&#x90e8;&#x5b66;&#x79d1;"/> <type name="Int"/> </relation>
    <relation name="&#x4ee3;&#x8868;&#x6559;&#x54e1;"> <type name="&#x6388;&#x696d;"/> <type name="&#x6559;&#x54e1;"/> </relation>
+   <relation name="&#x4fee;&#x5f97;&#x5358;&#x4f4d;"> <type name="&#x6210;&#x7e3e;"/> <type name="Int"/> </relation>
    <relation name="&#x5206;&#x91ce;&#x30b3;&#x30fc;&#x30c9;"> <type name="&#x5206;&#x91ce;"/> <type name="Int"/> </relation>
    <relation name="&#x5206;&#x985e;&#x30b3;&#x30fc;&#x30c9;"> <type name="&#x5206;&#x985e;"/> <type name="Int"/> </relation>
    <relation name="&#x526f;&#x62c5;"> <type name="&#x6642;&#x9593;&#x5272;"/> <type name="&#x6559;&#x54e1;"/> </relation>
@@ -225,6 +226,7 @@
    <relation name="&#x79d1;&#x76ee;"> <type name="&#x6388;&#x696d;"/> <type name="&#x79d1;&#x76ee;"/> </relation>
    <relation name="&#x79d1;&#x76ee;&#x30b3;&#x30fc;&#x30c9;"> <type name="&#x79d1;&#x76ee;"/> <type name="Int"/> </relation>
    <relation name="&#x8981;&#x4ef6;&#x30b3;&#x30fc;&#x30c9;"> <type name="&#x8981;&#x4ef6;"/> <type name="Int"/> </relation>
+   <relation name="&#x8a55;&#x4fa1;"> <type name="&#x6210;&#x7e3e;"/> <type name="Int"/> </relation>
    <relation name="&#x8a55;&#x4fa1;"> <type name="&#x8a66;&#x9a13;&#x6210;&#x7e3e;"/> <type name="Int"/> </relation>
    <relation name="&#x8ab2;&#x7a0b;"> <type name="&#x5b66;&#x90e8;&#x5b66;&#x79d1;"/> <type name="Int"/> </relation>
    <relation name="&#x914d;&#x5f53;&#x5b66;&#x5e74;"> <type name="&#x5b66;&#x5247;"/> <type name="Int"/> </relation>
