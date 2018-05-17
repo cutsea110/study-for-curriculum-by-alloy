@@ -104,11 +104,11 @@ sig 時間割{
 	隔週区分 : lone 隔週,
 }
 
-sig 施設{
+abstract sig 施設{
+	施設コード : one Int,
 }
 
 sig 教室 extends 施設{
-	教室番号 : one Int,
 }
 
 sig 履修{
