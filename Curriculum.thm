@@ -134,6 +134,10 @@
    <type name="&#x5b66;&#x5247;"/>
 </node>
 
+<node shape="Inv Trapezoid">
+   <type name="&#x632f;&#x66ff;&#x79d1;&#x76ee;"/>
+</node>
+
 <node shape="Lined Circle" color="Gray">
    <type name="&#x8a66;&#x9a13;&#x6210;&#x7e3e;"/>
 </node>
@@ -208,6 +212,7 @@
 <edge layout="yes">
    <relation name="&#x5b66;&#x751f;"> <type name="&#x51fa;&#x5e2d;&#x60c5;&#x5831;"/> <type name="&#x5b66;&#x751f;"/> </relation>
    <relation name="&#x5b66;&#x751f;"> <type name="&#x6210;&#x7e3e;"/> <type name="&#x5b66;&#x751f;"/> </relation>
+   <relation name="&#x5b66;&#x751f;"> <type name="&#x632f;&#x66ff;&#x79d1;&#x76ee;"/> <type name="&#x5b66;&#x751f;"/> </relation>
    <relation name="&#x5b66;&#x751f;"> <type name="&#x8a66;&#x9a13;&#x6210;&#x7e3e;"/> <type name="&#x5b66;&#x751f;"/> </relation>
    <relation name="&#x5bfe;&#x8c61;&#x5b66;&#x79d1;"> <type name="&#x30ab;&#x30ea;&#x30ad;&#x30e5;&#x30e9;&#x30e0;"/> <type name="&#x5b66;&#x90e8;&#x5b66;&#x79d1;"/> </relation>
    <relation name="&#x5c65;&#x4fee;&#x8005;"> <type name="&#x5c65;&#x4fee;"/> <type name="&#x5b66;&#x751f;"/> </relation>
