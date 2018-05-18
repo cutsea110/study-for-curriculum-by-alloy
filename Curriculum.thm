@@ -18,7 +18,6 @@
    <type name="&#x51fa;&#x5e2d;"/>
    <type name="&#x524d;&#x671f;&#x4e2d;&#x9593;"/>
    <type name="&#x524d;&#x671f;&#x672b;"/>
-   <type name="&#x5352;&#x696d;&#x8981;&#x4ef6;"/>
    <type name="&#x571f;1"/>
    <type name="&#x571f;2"/>
    <type name="&#x571f;3"/>
@@ -115,6 +114,10 @@
    <type name="&#x5c65;&#x4fee;"/>
 </node>
 
+<node shape="Dbl Octagon" color="Gray">
+   <type name="&#x5352;&#x696d;&#x8981;&#x4ef6;"/>
+</node>
+
 <node shape="Ellipse">
    <type name="&#x6642;&#x9593;&#x5272;"/>
 </node>
@@ -209,9 +212,12 @@
    <relation name="&#x5bfe;&#x8c61;&#x5b66;&#x79d1;"> <type name="&#x30ab;&#x30ea;&#x30ad;&#x30e5;&#x30e9;&#x30e0;"/> <type name="&#x5b66;&#x90e8;&#x5b66;&#x79d1;"/> </relation>
    <relation name="&#x5c65;&#x4fee;&#x8005;"> <type name="&#x5c65;&#x4fee;"/> <type name="&#x5b66;&#x751f;"/> </relation>
    <relation name="&#x6240;&#x5c5e;"> <type name="&#x5b66;&#x751f;"/> <type name="&#x5b66;&#x90e8;&#x5b66;&#x79d1;"/> </relation>
-   <relation name="&#x6388;&#x696d;"> <type name="&#x30b7;&#x30e9;&#x30d0;&#x30b9;"/> <type name="&#x6388;&#x696d;"/> </relation>
    <relation name="&#x6559;&#x80b2;&#x8ab2;&#x7a0b;"> <type name="&#x5b66;&#x5247;"/> <type name="&#x30ab;&#x30ea;&#x30ad;&#x30e5;&#x30e9;&#x30e0;"/> </relation>
    <relation name="&#x6642;&#x9593;&#x5272;"> <type name="&#x51fa;&#x5e2d;&#x60c5;&#x5831;"/> <type name="&#x6642;&#x9593;&#x5272;"/> </relation>
+</edge>
+
+<edge layout="yes" attribute="no">
+   <relation name="&#x5bfe;&#x5fdc;"> <type name="&#x30b7;&#x30e9;&#x30d0;&#x30b9;"/> <type name="&#x6388;&#x696d;"/> </relation>
 </edge>
 
 <edge visible="no" attribute="yes">

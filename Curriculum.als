@@ -126,6 +126,11 @@ sig 履修{
 	時間割 : 時間割,
 }
 
+fact 重複する履修登録はない{
+	no t:this/時間割 | some s:this/学生 | some disj r,r':履修 |
+		s in r.履修者 and s in r'.履修者 and t in r.時間割 and t in r'.時間割
+}
+
 sig 試験成績{
 	学生 : 学生,
 	時間割 : 時間割,
