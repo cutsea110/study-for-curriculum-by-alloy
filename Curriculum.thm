@@ -13,6 +13,7 @@
    <type name="String"/>
    <type name="True"/>
    <type name="univ"/>
+   <type name="&#x30b0;&#x30eb;&#x30fc;&#x30d7;"/>
    <type name="&#x5076;"/>
    <type name="&#x518d;&#x8a66;"/>
    <type name="&#x51fa;&#x5e2d;"/>
@@ -212,8 +213,8 @@
 <edge layout="yes">
    <relation name="&#x5b66;&#x751f;"> <type name="&#x51fa;&#x5e2d;&#x60c5;&#x5831;"/> <type name="&#x5b66;&#x751f;"/> </relation>
    <relation name="&#x5b66;&#x751f;"> <type name="&#x6210;&#x7e3e;"/> <type name="&#x5b66;&#x751f;"/> </relation>
-   <relation name="&#x5b66;&#x751f;"> <type name="&#x632f;&#x66ff;&#x79d1;&#x76ee;"/> <type name="&#x5b66;&#x751f;"/> </relation>
    <relation name="&#x5b66;&#x751f;"> <type name="&#x8a66;&#x9a13;&#x6210;&#x7e3e;"/> <type name="&#x5b66;&#x751f;"/> </relation>
+   <relation name="&#x5bfe;&#x8c61;"> <type name="&#x632f;&#x66ff;&#x79d1;&#x76ee;"/> <type name="&#x5b66;&#x751f;"/> </relation>
    <relation name="&#x5bfe;&#x8c61;&#x5b66;&#x79d1;"> <type name="&#x30ab;&#x30ea;&#x30ad;&#x30e5;&#x30e9;&#x30e0;"/> <type name="&#x5b66;&#x90e8;&#x5b66;&#x79d1;"/> </relation>
    <relation name="&#x5c65;&#x4fee;&#x8005;"> <type name="&#x5c65;&#x4fee;"/> <type name="&#x5b66;&#x751f;"/> </relation>
    <relation name="&#x6240;&#x5c5e;"> <type name="&#x5b66;&#x751f;"/> <type name="&#x5b66;&#x90e8;&#x5b66;&#x79d1;"/> </relation>
@@ -226,6 +227,9 @@
 </edge>
 
 <edge visible="no" attribute="yes">
+   <relation name="CAP&#x5236;&#x9650;&#x5bfe;&#x8c61;&#x30d5;&#x30e9;&#x30b0;"> <type name="&#x5b66;&#x5247;"/> <type name="Bool"/> </relation>
+   <relation name="&#x30b0;&#x30eb;&#x30fc;&#x30d7;"> <type name="&#x5b66;&#x5247;"/> <type name="&#x30b0;&#x30eb;&#x30fc;&#x30d7;"/> </relation>
+   <relation name="&#x30b0;&#x30eb;&#x30fc;&#x30d7;&#x30b3;&#x30fc;&#x30c9;"> <type name="&#x30b0;&#x30eb;&#x30fc;&#x30d7;"/> <type name="Int"/> </relation>
    <relation name="&#x30b3;&#x30fc;&#x30b9;"> <type name="&#x5b66;&#x90e8;&#x5b66;&#x79d1;"/> <type name="Int"/> </relation>
    <relation name="&#x4ee3;&#x8868;&#x6559;&#x54e1;"> <type name="&#x6388;&#x696d;"/> <type name="&#x6559;&#x54e1;"/> </relation>
    <relation name="&#x4fee;&#x5f97;&#x5358;&#x4f4d;"> <type name="&#x6210;&#x7e3e;"/> <type name="Int"/> </relation>
