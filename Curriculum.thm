@@ -108,23 +108,19 @@
    <type name="&#x6559;&#x54e1;"/>
 </node>
 
-<node shape="Diamond" color="Red">
-   <type name="&#x8981;&#x4ef6;"/>
+<node shape="Dbl Circle" color="Green">
+   <type name="&#x5c65;&#x4fee;"/>
 </node>
 
 <node shape="Ellipse">
    <type name="&#x6642;&#x9593;&#x5272;"/>
 </node>
 
-<node shape="Hexagon" color="Black">
-   <type name="&#x5c65;&#x4fee;"/>
-</node>
-
 <node shape="Hexagon" color="White">
    <type name="&#x5b66;&#x90e8;&#x5b66;&#x79d1;"/>
 </node>
 
-<node shape="House" color="Green">
+<node shape="House" color="Red">
    <type name="&#x6388;&#x696d;"/>
 </node>
 
@@ -140,12 +136,16 @@
    <type name="&#x6210;&#x7e3e;"/>
 </node>
 
-<node shape="Lined Diamond" color="Blue">
+<node shape="Lined Diamond" color="Red">
    <type name="&#x30ab;&#x30ea;&#x30ad;&#x30e5;&#x30e9;&#x30e0;"/>
 </node>
 
 <node shape="Lined Square" color="Blue">
    <type name="&#x5b66;&#x751f;"/>
+</node>
+
+<node shape="Octagon" color="Gray">
+   <type name="&#x8981;&#x4ef6;"/>
 </node>
 
 <node shape="Parallelogram" color="Gray">
@@ -236,6 +236,7 @@
    <relation name="&#x8a55;&#x4fa1;"> <type name="&#x8a66;&#x9a13;&#x6210;&#x7e3e;"/> <type name="Int"/> </relation>
    <relation name="&#x8ab2;&#x7a0b;"> <type name="&#x5b66;&#x90e8;&#x5b66;&#x79d1;"/> <type name="Int"/> </relation>
    <relation name="&#x914d;&#x5f53;&#x5b66;&#x5e74;"> <type name="&#x5b66;&#x5247;"/> <type name="Int"/> </relation>
+   <relation name="&#x9694;&#x9031;&#x533a;&#x5206;"> <type name="&#x6642;&#x9593;&#x5272;"/> <type name="&#x9694;&#x9031;"/> </relation>
 </edge>
 
 <edge visible="no" layout="no" attribute="yes">
