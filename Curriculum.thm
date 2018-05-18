@@ -249,6 +249,7 @@
    <relation name="&#x65bd;&#x8a2d;&#x30b3;&#x30fc;&#x30c9;"> <type name="&#x65bd;&#x8a2d;"/> <type name="Int"/> </relation>
    <relation name="&#x671f;"> <type name="&#x8a66;&#x9a13;&#x6210;&#x7e3e;"/> <type name="&#x8a66;&#x9a13;&#x6642;&#x671f;"/> </relation>
    <relation name="&#x79d1;&#x76ee;&#x30b3;&#x30fc;&#x30c9;"> <type name="&#x79d1;&#x76ee;"/> <type name="Int"/> </relation>
+   <relation name="&#x79d1;&#x76ee;&#x5c02;&#x9580;&#x533a;&#x5206;"> <type name="&#x5b66;&#x5247;"/> <type name="Int"/> </relation>
    <relation name="&#x8981;&#x4ef6;&#x30b3;&#x30fc;&#x30c9;"> <type name="&#x8981;&#x4ef6;"/> <type name="Int"/> </relation>
    <relation name="&#x8a55;&#x4fa1;"> <type name="&#x6210;&#x7e3e;"/> <type name="Int"/> </relation>
    <relation name="&#x8a55;&#x4fa1;"> <type name="&#x8a66;&#x9a13;&#x6210;&#x7e3e;"/> <type name="Int"/> </relation>
