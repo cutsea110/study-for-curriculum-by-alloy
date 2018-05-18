@@ -75,8 +75,6 @@
    <type name="&#x706b;6"/>
    <type name="&#x706b;7"/>
    <type name="&#x706b;8"/>
-   <type name="&#x8981;&#x4ef6;"/>
-   <type name="&#x8a66;&#x9a13;&#x6210;&#x7e3e;"/>
    <type name="&#x8cc7;&#x683c;&#x8981;&#x4ef6;"/>
    <type name="&#x8ffd;&#x8a66;"/>
    <type name="&#x901a;&#x5e38;"/>
@@ -93,28 +91,13 @@
    <type name="seq/Int"/>
 </node>
 
-<node color="Black">
-   <type name="&#x5c65;&#x4fee;"/>
-</node>
-
-<node color="Red">
-   <type name="&#x6642;&#x9593;&#x5272;"/>
-</node>
-
-<node color="Yellow">
-   <type name="&#x6388;&#x696d;"/>
-</node>
-
 <node hideunconnected="yes">
    <type name="&#x5206;&#x91ce;"/>
    <type name="&#x5206;&#x985e;"/>
+   <type name="&#x65bd;&#x8a2d;"/>
    <type name="&#x8a66;&#x9a13;&#x533a;&#x5206;"/>
    <type name="&#x8a66;&#x9a13;&#x6642;&#x671f;"/>
    <type name="&#x9694;&#x9031;"/>
-</node>
-
-<node hideunconnected="yes" color="Blue">
-   <type name="&#x65bd;&#x8a2d;"/>
 </node>
 
 <node hideunconnected="yes" color="Gray">
@@ -125,28 +108,48 @@
    <type name="&#x6559;&#x54e1;"/>
 </node>
 
-<node shape="Box" color="Blue">
-   <type name="&#x51fa;&#x5e2d;&#x60c5;&#x5831;"/>
+<node shape="Diamond" color="Red">
+   <type name="&#x8981;&#x4ef6;"/>
+</node>
+
+<node shape="Ellipse">
+   <type name="&#x6642;&#x9593;&#x5272;"/>
+</node>
+
+<node shape="Hexagon" color="Black">
+   <type name="&#x5c65;&#x4fee;"/>
 </node>
 
 <node shape="Hexagon" color="White">
    <type name="&#x5b66;&#x90e8;&#x5b66;&#x79d1;"/>
 </node>
 
+<node shape="House" color="Green">
+   <type name="&#x6388;&#x696d;"/>
+</node>
+
 <node shape="Inv House" color="Red">
    <type name="&#x5b66;&#x5247;"/>
+</node>
+
+<node shape="Lined Circle" color="Gray">
+   <type name="&#x8a66;&#x9a13;&#x6210;&#x7e3e;"/>
 </node>
 
 <node shape="Lined Circle" color="Green">
    <type name="&#x6210;&#x7e3e;"/>
 </node>
 
-<node shape="Lined Diamond" color="Gray">
-   <type name="&#x5b66;&#x751f;"/>
+<node shape="Lined Diamond" color="Blue">
+   <type name="&#x30ab;&#x30ea;&#x30ad;&#x30e5;&#x30e9;&#x30e0;"/>
 </node>
 
 <node shape="Lined Square" color="Blue">
-   <type name="&#x30ab;&#x30ea;&#x30ad;&#x30e5;&#x30e9;&#x30e0;"/>
+   <type name="&#x5b66;&#x751f;"/>
+</node>
+
+<node shape="Parallelogram" color="Gray">
+   <type name="&#x51fa;&#x5e2d;&#x60c5;&#x5831;"/>
 </node>
 
 <node shape="Parallelogram" color="Green">
@@ -174,6 +177,10 @@
 <node visible="yes" hideunconnected="yes">
    <type name="Bool"/>
 </node>
+
+<edge attribute="no">
+   <relation name="&#x79d1;&#x76ee;"> <type name="&#x6388;&#x696d;"/> <type name="&#x79d1;&#x76ee;"/> </relation>
+</edge>
 
 <edge color="Gray" constraint="no">
    <relation name="Next"> <type name="open$3/Ord"/> <type name="&#x51fa;&#x6b20;&#x72b6;&#x614b;"/> <type name="&#x51fa;&#x6b20;&#x72b6;&#x614b;"/> </relation>
@@ -223,7 +230,6 @@
    <relation name="&#x6559;&#x54e1;&#x756a;&#x53f7;"> <type name="&#x6559;&#x54e1;"/> <type name="Int"/> </relation>
    <relation name="&#x65bd;&#x8a2d;&#x30b3;&#x30fc;&#x30c9;"> <type name="&#x65bd;&#x8a2d;"/> <type name="Int"/> </relation>
    <relation name="&#x671f;"> <type name="&#x8a66;&#x9a13;&#x6210;&#x7e3e;"/> <type name="&#x8a66;&#x9a13;&#x6642;&#x671f;"/> </relation>
-   <relation name="&#x79d1;&#x76ee;"> <type name="&#x6388;&#x696d;"/> <type name="&#x79d1;&#x76ee;"/> </relation>
    <relation name="&#x79d1;&#x76ee;&#x30b3;&#x30fc;&#x30c9;"> <type name="&#x79d1;&#x76ee;"/> <type name="Int"/> </relation>
    <relation name="&#x8981;&#x4ef6;&#x30b3;&#x30fc;&#x30c9;"> <type name="&#x8981;&#x4ef6;"/> <type name="Int"/> </relation>
    <relation name="&#x8a55;&#x4fa1;"> <type name="&#x6210;&#x7e3e;"/> <type name="Int"/> </relation>
