@@ -94,18 +94,21 @@
 <node hideunconnected="yes">
    <type name="&#x5206;&#x91ce;"/>
    <type name="&#x5206;&#x985e;"/>
-   <type name="&#x65bd;&#x8a2d;"/>
    <type name="&#x8a66;&#x9a13;&#x533a;&#x5206;"/>
    <type name="&#x8a66;&#x9a13;&#x6642;&#x671f;"/>
    <type name="&#x9694;&#x9031;"/>
 </node>
 
-<node hideunconnected="yes" color="Gray">
-   <type name="&#x79d1;&#x76ee;"/>
+<node hideunconnected="yes" color="Black">
+   <type name="&#x65bd;&#x8a2d;"/>
 </node>
 
 <node hideunconnected="yes" color="Green">
    <type name="&#x6559;&#x54e1;"/>
+</node>
+
+<node hideunconnected="yes" shape="Ellipse" color="Black">
+   <type name="&#x79d1;&#x76ee;"/>
 </node>
 
 <node shape="Dbl Circle" color="Green">
@@ -152,7 +155,7 @@
    <type name="&#x51fa;&#x5e2d;&#x60c5;&#x5831;"/>
 </node>
 
-<node shape="Parallelogram" color="Green">
+<node shape="Parallelogram" color="Red">
    <type name="&#x30b7;&#x30e9;&#x30d0;&#x30b9;"/>
 </node>
 
