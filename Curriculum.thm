@@ -10,14 +10,12 @@
 <node>
    <type name="False"/>
    <type name="Int"/>
-   <type name="String"/>
    <type name="True"/>
    <type name="univ"/>
    <type name="&#x30b0;&#x30eb;&#x30fc;&#x30d7;"/>
    <type name="&#x4f55;&#x3082;&#x3057;&#x306a;&#x3044;"/>
    <type name="&#x5076;"/>
    <type name="&#x518d;&#x8a66;"/>
-   <type name="&#x51e6;&#x7406;"/>
    <type name="&#x51fa;&#x5e2d;"/>
    <type name="&#x5224;&#x5b9a;&#x5f8c;&#x51e6;&#x7406;"/>
    <type name="&#x5224;&#x5b9a;&#x6761;&#x4ef6;"/>
@@ -103,6 +101,8 @@
 </node>
 
 <node hideunconnected="yes">
+   <type name="String"/>
+   <type name="&#x51e6;&#x7406;"/>
    <type name="&#x5206;&#x91ce;"/>
    <type name="&#x5206;&#x985e;"/>
    <type name="&#x8a66;&#x9a13;&#x533a;&#x5206;"/>
