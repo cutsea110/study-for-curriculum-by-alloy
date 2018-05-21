@@ -12,7 +12,6 @@
    <type name="Int"/>
    <type name="True"/>
    <type name="univ"/>
-   <type name="&#x30b0;&#x30eb;&#x30fc;&#x30d7;"/>
    <type name="&#x4f55;&#x3082;&#x3057;&#x306a;&#x3044;"/>
    <type name="&#x5076;"/>
    <type name="&#x518d;&#x8a66;"/>
@@ -104,6 +103,7 @@
 
 <node hideunconnected="yes">
    <type name="String"/>
+   <type name="&#x30b0;&#x30eb;&#x30fc;&#x30d7;"/>
    <type name="&#x51e6;&#x7406;"/>
    <type name="&#x5206;&#x91ce;"/>
    <type name="&#x5206;&#x985e;"/>
@@ -124,6 +124,14 @@
    <type name="&#x79d1;&#x76ee;"/>
 </node>
 
+<node hideunconnected="yes" shape="Hexagon" color="White">
+   <type name="&#x5b66;&#x90e8;&#x5b66;&#x79d1;"/>
+</node>
+
+<node hideunconnected="yes" shape="Octagon" color="Gray">
+   <type name="&#x8981;&#x4ef6;"/>
+</node>
+
 <node shape="Dbl Circle" color="Green">
    <type name="&#x5c65;&#x4fee;"/>
 </node>
@@ -134,10 +142,6 @@
 
 <node shape="Ellipse">
    <type name="&#x6642;&#x9593;&#x5272;"/>
-</node>
-
-<node shape="Hexagon" color="White">
-   <type name="&#x5b66;&#x90e8;&#x5b66;&#x79d1;"/>
 </node>
 
 <node shape="House" color="Red">
@@ -166,10 +170,6 @@
 
 <node shape="Lined Square" color="Blue">
    <type name="&#x5b66;&#x751f;"/>
-</node>
-
-<node shape="Octagon" color="Gray">
-   <type name="&#x8981;&#x4ef6;"/>
 </node>
 
 <node shape="Parallelogram" color="Gray">
