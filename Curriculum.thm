@@ -11,6 +11,7 @@
    <type name="Int"/>
    <type name="Off"/>
    <type name="On"/>
+   <type name="String"/>
    <type name="univ"/>
    <type name="&#x4e00;&#x5e74;&#x6b21;"/>
    <type name="&#x4e09;&#x5e74;&#x6b21;"/>
@@ -110,7 +111,6 @@
 
 <node hideunconnected="yes">
    <type name="GPA&#x5024;"/>
-   <type name="String"/>
    <type name="&#x30b0;&#x30eb;&#x30fc;&#x30d7;"/>
    <type name="&#x30b3;&#x30fc;&#x30b9;"/>
    <type name="&#x30d5;&#x30e9;&#x30b0;"/>
@@ -261,6 +261,7 @@
    <relation name="&#x30b0;&#x30eb;&#x30fc;&#x30d7;"> <type name="&#x5b66;&#x5247;"/> <type name="&#x30b0;&#x30eb;&#x30fc;&#x30d7;"/> </relation>
    <relation name="&#x30b3;&#x30fc;&#x30b9;"> <type name="&#x5b66;&#x90e8;&#x5b66;&#x79d1;"/> <type name="&#x30b3;&#x30fc;&#x30b9;"/> </relation>
    <relation name="&#x4ee3;&#x8868;&#x6559;&#x54e1;"> <type name="&#x6388;&#x696d;"/> <type name="&#x6559;&#x54e1;"/> </relation>
+   <relation name="&#x4fee;&#x5f97;&#x5358;&#x4f4d;"> <type name="&#x6210;&#x7e3e;"/> <type name="&#x5358;&#x4f4d;&#x6570;"/> </relation>
    <relation name="&#x5224;&#x5b9a;&#x9806;"> <type name="&#x8981;&#x4ef6;&#x5224;&#x5b9a;"/> <type name="Int"/> </relation>
    <relation name="&#x526f;&#x62c5;"> <type name="&#x6642;&#x9593;&#x5272;"/> <type name="&#x6559;&#x54e1;"/> </relation>
    <relation name="&#x533a;&#x5206;"> <type name="&#x8a66;&#x9a13;&#x6210;&#x7e3e;"/> <type name="&#x8a66;&#x9a13;&#x533a;&#x5206;"/> </relation>
