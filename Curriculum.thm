@@ -235,7 +235,6 @@
 
 <edge attribute="no">
    <relation name="&#x5bfe;&#x8c61;&#x533a;&#x5206;"> <type name="&#x5224;&#x5b9a;&#x6761;&#x4ef6;&#x79d1;&#x76ee;&#x5c02;&#x9580;&#x533a;&#x5206;"/> <type name="&#x79d1;&#x76ee;&#x5c02;&#x9580;&#x533a;&#x5206;"/> </relation>
-   <relation name="&#x79d1;&#x76ee;"> <type name="&#x6388;&#x696d;"/> <type name="&#x79d1;&#x76ee;"/> </relation>
 </edge>
 
 <edge color="Gray" constraint="no">
@@ -302,7 +301,12 @@
    <relation name="&#x5fc5;&#x4fee;&#x5b8c;&#x4e86;"> <type name="&#x5224;&#x5b9a;&#x6761;&#x4ef6;"/> <type name="&#x30d5;&#x30e9;&#x30b0;"/> </relation>
    <relation name="&#x5fc5;&#x4fee;&#x79d1;&#x76ee;&#x6570;&#x4e0b;&#x9650;"> <type name="&#x5224;&#x5b9a;&#x6761;&#x4ef6;"/> <type name="&#x5358;&#x4f4d;&#x6570;"/> </relation>
    <relation name="&#x62c5;&#x5f53;"> <type name="&#x6642;&#x9593;&#x5272;"/> <type name="&#x6559;&#x54e1;"/> </relation>
+   <relation name="&#x6559;&#x5ba4;"> <type name="&#x51fa;&#x5e2d;&#x60c5;&#x5831;"/> <type name="&#x65bd;&#x8a2d;"/> </relation>
+   <relation name="&#x6559;&#x5ba4;&#x6642;&#x9593;&#x5272;"> <type name="&#x6642;&#x9593;&#x5272;"/> <type name="&#x65bd;&#x8a2d;"/> </relation>
    <relation name="&#x671f;"> <type name="&#x8a66;&#x9a13;&#x6210;&#x7e3e;"/> <type name="&#x8a66;&#x9a13;&#x6642;&#x671f;"/> </relation>
+   <relation name="&#x79d1;&#x76ee;"> <type name="&#x5b66;&#x5247;"/> <type name="&#x79d1;&#x76ee;"/> </relation>
+   <relation name="&#x79d1;&#x76ee;"> <type name="&#x6210;&#x7e3e;"/> <type name="&#x79d1;&#x76ee;"/> </relation>
+   <relation name="&#x79d1;&#x76ee;"> <type name="&#x6388;&#x696d;"/> <type name="&#x79d1;&#x76ee;"/> </relation>
    <relation name="&#x8a55;&#x4fa1;"> <type name="&#x6210;&#x7e3e;"/> <type name="&#x8a55;&#x4fa1;&#x30b3;&#x30fc;&#x30c9;"/> </relation>
    <relation name="&#x8a55;&#x4fa1;"> <type name="&#x8a66;&#x9a13;&#x6210;&#x7e3e;"/> <type name="&#x8a55;&#x4fa1;&#x30b3;&#x30fc;&#x30c9;"/> </relation>
    <relation name="&#x8ab2;&#x7a0b;"> <type name="&#x5b66;&#x90e8;&#x5b66;&#x79d1;"/> <type name="&#x8ab2;&#x7a0b;"/> </relation>
