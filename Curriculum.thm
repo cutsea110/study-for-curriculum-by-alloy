@@ -33,8 +33,6 @@
    <type name="&#x518d;&#x8a66;"/>
    <type name="&#x51fa;&#x5e2d;"/>
    <type name="&#x5224;&#x5b9a;&#x5f8c;&#x51e6;&#x7406;"/>
-   <type name="&#x5224;&#x5b9a;&#x6761;&#x4ef6;"/>
-   <type name="&#x5224;&#x5b9a;&#x6761;&#x4ef6;&#x79d1;&#x76ee;&#x5c02;&#x9580;&#x533a;&#x5206;"/>
    <type name="&#x524d;&#x671f;&#x4e2d;&#x9593;"/>
    <type name="&#x524d;&#x671f;&#x672b;"/>
    <type name="&#x5352;&#x696d;"/>
@@ -99,7 +97,6 @@
    <type name="&#x706b;7"/>
    <type name="&#x706b;8"/>
    <type name="&#x79d1;&#x76ee;&#x5c02;&#x9580;&#x533a;&#x5206;"/>
-   <type name="&#x8981;&#x4ef6;&#x5224;&#x5b9a;"/>
    <type name="&#x8a55;&#x4fa1;&#x4e0d;&#x8981;"/>
    <type name="&#x8a55;&#x4fa1;&#x57fa;&#x6e96;"/>
    <type name="&#x8a8d;&#x5b9a;&#x8a55;&#x4fa1;"/>
@@ -191,8 +188,17 @@
    <type name="&#x6642;&#x9593;&#x5272;"/>
 </node>
 
+<node shape="Hexagon" color="White">
+   <type name="&#x5224;&#x5b9a;&#x6761;&#x4ef6;&#x79d1;&#x76ee;&#x5c02;&#x9580;&#x533a;&#x5206;"/>
+   <type name="&#x8981;&#x4ef6;&#x5224;&#x5b9a;"/>
+</node>
+
 <node shape="House" color="Red">
    <type name="&#x6388;&#x696d;"/>
+</node>
+
+<node shape="House" color="White">
+   <type name="&#x5224;&#x5b9a;&#x6761;&#x4ef6;"/>
 </node>
 
 <node shape="Inv House" color="Red">
@@ -250,6 +256,10 @@
    <relation name="&#x66dc;&#x6642;"> <type name="&#x6642;&#x9593;&#x5272;"/> <type name="&#x66dc;&#x65e5;&#x6642;&#x9650;"/> </relation>
 </edge>
 
+<edge layout="no">
+   <relation name="&#x6642;&#x9593;&#x5272;"> <type name="&#x51fa;&#x5e2d;&#x60c5;&#x5831;"/> <type name="&#x6642;&#x9593;&#x5272;"/> </relation>
+</edge>
+
 <edge layout="yes">
    <relation name="&#x542b;&#x307e;&#x308c;&#x308b;"> <type name="&#x5b66;&#x5247;"/> <type name="&#x30ab;&#x30ea;&#x30ad;&#x30e5;&#x30e9;&#x30e0;"/> </relation>
    <relation name="&#x5b66;&#x751f;"> <type name="&#x51fa;&#x5e2d;&#x60c5;&#x5831;"/> <type name="&#x5b66;&#x751f;"/> </relation>
@@ -260,7 +270,6 @@
    <relation name="&#x5c5e;&#x3059;&#x308b;"> <type name="&#x5224;&#x5b9a;&#x6761;&#x4ef6;"/> <type name="&#x8981;&#x4ef6;&#x5224;&#x5b9a;"/> </relation>
    <relation name="&#x5c5e;&#x3059;&#x308b;"> <type name="&#x5224;&#x5b9a;&#x6761;&#x4ef6;&#x79d1;&#x76ee;&#x5c02;&#x9580;&#x533a;&#x5206;"/> <type name="&#x5224;&#x5b9a;&#x6761;&#x4ef6;"/> </relation>
    <relation name="&#x5c65;&#x4fee;&#x8005;"> <type name="&#x5c65;&#x4fee;"/> <type name="&#x5b66;&#x751f;"/> </relation>
-   <relation name="&#x6642;&#x9593;&#x5272;"> <type name="&#x51fa;&#x5e2d;&#x60c5;&#x5831;"/> <type name="&#x6642;&#x9593;&#x5272;"/> </relation>
 </edge>
 
 <edge visible="no" attribute="yes">
