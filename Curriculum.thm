@@ -96,7 +96,6 @@
    <type name="&#x706b;6"/>
    <type name="&#x706b;7"/>
    <type name="&#x706b;8"/>
-   <type name="&#x79d1;&#x76ee;&#x5c02;&#x9580;&#x533a;&#x5206;"/>
    <type name="&#x8a55;&#x4fa1;&#x4e0d;&#x8981;"/>
    <type name="&#x8a55;&#x4fa1;&#x57fa;&#x6e96;"/>
    <type name="&#x8a8d;&#x5b9a;&#x8a55;&#x4fa1;"/>
@@ -145,6 +144,7 @@
    <type name="&#x5e74;&#x5ea6;"/>
    <type name="&#x5e74;&#x6b21;"/>
    <type name="&#x6388;&#x696d;&#x56de;"/>
+   <type name="&#x79d1;&#x76ee;&#x5c02;&#x9580;&#x533a;&#x5206;"/>
    <type name="&#x8a55;&#x4fa1;&#x30b3;&#x30fc;&#x30c9;"/>
    <type name="&#x8a66;&#x9a13;&#x533a;&#x5206;"/>
    <type name="&#x8a66;&#x9a13;&#x6642;&#x671f;"/>
