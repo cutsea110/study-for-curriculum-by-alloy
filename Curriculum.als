@@ -147,12 +147,39 @@ sig 科目{
 sig 教員{
 }
 
-sig 学生{
+abstract sig 学生{
 	年次 : 年次,
 	所属 : 学部学科,
 	適用 : カリキュラム,
+	卒業進級対象 : フラグ,
+	留学生フラグ : フラグ,
 	教職 : set 教職要件,
 	資格 : set (資格要件 - 教職要件),
+}
+
+sig 正規生 extends 学生{
+}{
+	適用 in 正規カリキュラム
+	卒業進級対象 = On
+	留学生フラグ = Off
+}
+sig 二年次編入生 extends 正規生{
+}
+sig 三年次編入生 extends 正規生{
+}
+sig 留学生 extends 正規生{
+}{
+	留学生フラグ = On
+}
+abstract sig 非正規生 extends 学生{
+}{
+	卒業進級対象 = Off
+}
+sig 科目等履修生 extends 非正規生{
+}
+sig 聴講生 extends 非正規生{
+}
+sig 特別聴講生 extends 非正規生{
 }
 
 sig シラバス{
