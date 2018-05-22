@@ -8,7 +8,14 @@
 <defaultedge/>
 
 <node>
+   <type name="A"/>
+   <type name="B"/>
+   <type name="C"/>
+   <type name="D"/>
+   <type name="E"/>
+   <type name="F"/>
    <type name="Int"/>
+   <type name="N"/>
    <type name="Off"/>
    <type name="On"/>
    <type name="String"/>
@@ -104,6 +111,7 @@
    <type name="&#x91d1;8"/>
    <type name="&#x96f6;&#x5e74;&#x6b21;"/>
    <type name="open$10/Ord"/>
+   <type name="open$11/Ord"/>
    <type name="open$8/Ord"/>
    <type name="open$9/Ord"/>
    <type name="seq/Int"/>
@@ -122,6 +130,7 @@
    <type name="&#x5e74;&#x5ea6;"/>
    <type name="&#x5e74;&#x6b21;"/>
    <type name="&#x6388;&#x696d;&#x56de;"/>
+   <type name="&#x8a55;&#x4fa1;"/>
    <type name="&#x8a66;&#x9a13;&#x533a;&#x5206;"/>
    <type name="&#x8a66;&#x9a13;&#x6642;&#x671f;"/>
    <type name="&#x8ab2;&#x7a0b;"/>
@@ -282,8 +291,8 @@
    <relation name="&#x5fc5;&#x4fee;&#x79d1;&#x76ee;&#x6570;&#x4e0b;&#x9650;"> <type name="&#x5224;&#x5b9a;&#x6761;&#x4ef6;"/> <type name="&#x5358;&#x4f4d;&#x6570;"/> </relation>
    <relation name="&#x62c5;&#x5f53;"> <type name="&#x6642;&#x9593;&#x5272;"/> <type name="&#x6559;&#x54e1;"/> </relation>
    <relation name="&#x671f;"> <type name="&#x8a66;&#x9a13;&#x6210;&#x7e3e;"/> <type name="&#x8a66;&#x9a13;&#x6642;&#x671f;"/> </relation>
-   <relation name="&#x8a55;&#x4fa1;"> <type name="&#x6210;&#x7e3e;"/> <type name="Int"/> </relation>
-   <relation name="&#x8a55;&#x4fa1;"> <type name="&#x8a66;&#x9a13;&#x6210;&#x7e3e;"/> <type name="Int"/> </relation>
+   <relation name="&#x8a55;&#x4fa1;"> <type name="&#x6210;&#x7e3e;"/> <type name="&#x8a55;&#x4fa1;"/> </relation>
+   <relation name="&#x8a55;&#x4fa1;"> <type name="&#x8a66;&#x9a13;&#x6210;&#x7e3e;"/> <type name="&#x8a55;&#x4fa1;"/> </relation>
    <relation name="&#x8ab2;&#x7a0b;"> <type name="&#x5b66;&#x90e8;&#x5b66;&#x79d1;"/> <type name="&#x8ab2;&#x7a0b;"/> </relation>
    <relation name="&#x914d;&#x5f53;&#x5b66;&#x5e74;"> <type name="&#x5b66;&#x5247;"/> <type name="&#x5e74;&#x6b21;"/> </relation>
    <relation name="&#x9694;&#x9031;&#x533a;&#x5206;"> <type name="&#x6642;&#x9593;&#x5272;"/> <type name="&#x9694;&#x9031;"/> </relation>
