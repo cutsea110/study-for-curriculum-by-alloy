@@ -56,9 +56,9 @@ abstract sig 評価基準{
 }
 one sig 段階評価 extends 評価基準{
 }{
-	取り得る評価 = A + B + C + D + F
-	単位認定評価 = A + B + C + D
-	GPA = (A -> GPA_4) + (B -> GPA_3) + (C -> GPA_2) + (D -> GPA_1) + (F -> GPA_0) 
+	取り得る評価 = S + A + B + C + D
+	単位認定評価 = S + A + B + C
+	GPA = (S -> GPA_4) + (A -> GPA_3) + (B -> GPA_2) + (C -> GPA_1) + (D -> GPA_0)
 }
 one sig 認定評価 extends 評価基準{
 }{
