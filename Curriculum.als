@@ -17,7 +17,7 @@ enum 試験区分 { 通常, 追試, 再試 }
 enum 試験時期 { 前期中間, 前期末, 後期中間, 後期末 }
 enum 処理 { 何もしない, 進級, 卒業, 卒研受講制限, 退学 }
 enum 年次 { 零年次, 一年次, 二年次, 三年次, 四年次 }
-enum 評価コード { S, A, B, C, D, E, F, N }
+enum 評価コード { S, A, B, C, D, F, N }
 enum GPA値 { GPA_0, GPA_1, GPA_2, GPA_3, GPA_4 }
 
 sig 年度{
@@ -56,15 +56,21 @@ abstract sig 評価基準{
 }
 one sig 段階評価 extends 評価基準{
 }{
-	取り得る評価 = A + B + C + D + E + F
+	取り得る評価 = A + B + C + D + F
 	単位認定評価 = A + B + C + D
-	GPA = (A -> GPA_4) + (B -> GPA_3) + (C -> GPA_2) + (D -> GPA_1) + (E -> GPA_0) + (F -> GPA_0) 
+	GPA = (A -> GPA_4) + (B -> GPA_3) + (C -> GPA_2) + (D -> GPA_1) + (F -> GPA_0) 
 }
 one sig 認定評価 extends 評価基準{
 }{
-	取り得る評価 = N + D
+	取り得る評価 = N + F
 	単位認定評価 = N
-	GPA = (N -> GPA_0) + (D -> GPA_0)
+	GPA = (N -> GPA_0) + (F -> GPA_0)
+}
+one sig 評価不要 extends 評価基準{
+}{
+	取り得る評価 = A
+	単位認定評価 = A
+	GPA = (A -> GPA_3)
 }
 
 abstract sig 要件 {
