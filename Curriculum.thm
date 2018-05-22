@@ -29,7 +29,6 @@
    <type name="&#x4e09;&#x5e74;&#x6b21;"/>
    <type name="&#x4e8c;&#x5e74;&#x6b21;"/>
    <type name="&#x4f55;&#x3082;&#x3057;&#x306a;&#x3044;"/>
-   <type name="&#x5076;"/>
    <type name="&#x518d;&#x8a66;"/>
    <type name="&#x51fa;&#x5e2d;"/>
    <type name="&#x524d;&#x671f;&#x4e2d;&#x9593;"/>
@@ -45,7 +44,6 @@
    <type name="&#x571f;6"/>
    <type name="&#x571f;7"/>
    <type name="&#x571f;8"/>
-   <type name="&#x5947;"/>
    <type name="&#x5f8c;&#x671f;&#x4e2d;&#x9593;"/>
    <type name="&#x5f8c;&#x671f;&#x672b;"/>
    <type name="&#x5fc5;&#x4fee;"/>
@@ -79,6 +77,7 @@
    <type name="&#x6b20;&#x5e2d;"/>
    <type name="&#x6b63;&#x898f;&#x30ab;&#x30ea;&#x30ad;&#x30e5;&#x30e9;&#x30e0;"/>
    <type name="&#x6bb5;&#x968e;&#x8a55;&#x4fa1;"/>
+   <type name="&#x6bce;&#x9031;"/>
    <type name="&#x6c34;1"/>
    <type name="&#x6c34;2"/>
    <type name="&#x6c34;3"/>
@@ -148,6 +147,7 @@
    <type name="&#x8a66;&#x9a13;&#x533a;&#x5206;"/>
    <type name="&#x8a66;&#x9a13;&#x6642;&#x671f;"/>
    <type name="&#x8ab2;&#x7a0b;"/>
+   <type name="&#x9031;&#x9593;&#x9694;"/>
    <type name="&#x9694;&#x9031;"/>
 </node>
 
@@ -320,9 +320,9 @@
    <relation name="&#x8a55;&#x4fa1;&#x57fa;&#x6e96;"> <type name="&#x5b66;&#x5247;"/> <type name="&#x8a55;&#x4fa1;&#x57fa;&#x6e96;"/> </relation>
    <relation name="&#x8ab2;&#x7a0b;"> <type name="&#x5b66;&#x90e8;&#x5b66;&#x79d1;"/> <type name="&#x8ab2;&#x7a0b;"/> </relation>
    <relation name="&#x8cc7;&#x683c;"> <type name="&#x5b66;&#x751f;"/> <type name="&#x8cc7;&#x683c;&#x8981;&#x4ef6;"/> </relation>
+   <relation name="&#x9031;&#x9593;&#x9694;&#x533a;&#x5206;"> <type name="&#x6642;&#x9593;&#x5272;"/> <type name="&#x9031;&#x9593;&#x9694;"/> </relation>
    <relation name="&#x9069;&#x7528;&#x8981;&#x4ef6;"> <type name="&#x5b66;&#x5247;"/> <type name="&#x8981;&#x4ef6;"/> </relation>
    <relation name="&#x914d;&#x5f53;&#x5b66;&#x5e74;"> <type name="&#x5b66;&#x5247;"/> <type name="&#x5e74;&#x6b21;"/> </relation>
-   <relation name="&#x9694;&#x9031;&#x533a;&#x5206;"> <type name="&#x6642;&#x9593;&#x5272;"/> <type name="&#x9694;&#x9031;"/> </relation>
 </edge>
 
 <edge visible="no" layout="yes" attribute="yes">
