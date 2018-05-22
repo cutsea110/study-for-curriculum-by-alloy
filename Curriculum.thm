@@ -14,6 +14,11 @@
    <type name="D"/>
    <type name="E"/>
    <type name="F"/>
+   <type name="GPA_0"/>
+   <type name="GPA_1"/>
+   <type name="GPA_2"/>
+   <type name="GPA_3"/>
+   <type name="GPA_4"/>
    <type name="Int"/>
    <type name="N"/>
    <type name="Off"/>
@@ -115,6 +120,7 @@
    <type name="&#x96f6;&#x5e74;&#x6b21;"/>
    <type name="open$10/Ord"/>
    <type name="open$11/Ord"/>
+   <type name="open$12/Ord"/>
    <type name="open$8/Ord"/>
    <type name="open$9/Ord"/>
    <type name="seq/Int"/>
@@ -270,11 +276,11 @@
 
 <edge visible="no" attribute="yes">
    <relation name="CAP&#x5236;&#x9650;&#x5bfe;&#x8c61;"> <type name="&#x5b66;&#x5247;"/> <type name="&#x30d5;&#x30e9;&#x30b0;"/> </relation>
+   <relation name="GPA"> <type name="&#x8a55;&#x4fa1;&#x57fa;&#x6e96;"/> <type name="&#x8a55;&#x4fa1;&#x30b3;&#x30fc;&#x30c9;"/> <type name="GPA&#x5024;"/> </relation>
    <relation name="GPA&#x4e0b;&#x9650;"> <type name="&#x8981;&#x4ef6;&#x5224;&#x5b9a;"/> <type name="GPA&#x5024;"/> </relation>
    <relation name="&#x30b0;&#x30eb;&#x30fc;&#x30d7;"> <type name="&#x5b66;&#x5247;"/> <type name="&#x30b0;&#x30eb;&#x30fc;&#x30d7;"/> </relation>
    <relation name="&#x30b3;&#x30fc;&#x30b9;"> <type name="&#x5b66;&#x90e8;&#x5b66;&#x79d1;"/> <type name="&#x30b3;&#x30fc;&#x30b9;"/> </relation>
    <relation name="&#x4ee3;&#x8868;&#x6559;&#x54e1;"> <type name="&#x6388;&#x696d;"/> <type name="&#x6559;&#x54e1;"/> </relation>
-   <relation name="&#x4fee;&#x5f97;&#x5358;&#x4f4d;"> <type name="&#x6210;&#x7e3e;"/> <type name="&#x5358;&#x4f4d;&#x6570;"/> </relation>
    <relation name="&#x5224;&#x5b9a;&#x9806;"> <type name="&#x8981;&#x4ef6;&#x5224;&#x5b9a;"/> <type name="Int"/> </relation>
    <relation name="&#x526f;&#x62c5;"> <type name="&#x6642;&#x9593;&#x5272;"/> <type name="&#x6559;&#x54e1;"/> </relation>
    <relation name="&#x533a;&#x5206;"> <type name="&#x8a66;&#x9a13;&#x6210;&#x7e3e;"/> <type name="&#x8a66;&#x9a13;&#x533a;&#x5206;"/> </relation>
