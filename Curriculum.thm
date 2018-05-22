@@ -32,7 +32,6 @@
    <type name="&#x5076;"/>
    <type name="&#x518d;&#x8a66;"/>
    <type name="&#x51fa;&#x5e2d;"/>
-   <type name="&#x5224;&#x5b9a;&#x5f8c;&#x51e6;&#x7406;"/>
    <type name="&#x524d;&#x671f;&#x4e2d;&#x9593;"/>
    <type name="&#x524d;&#x671f;&#x672b;"/>
    <type name="&#x5352;&#x696d;"/>
@@ -186,6 +185,10 @@
 
 <node shape="Ellipse">
    <type name="&#x6642;&#x9593;&#x5272;"/>
+</node>
+
+<node shape="Ellipse" color="White">
+   <type name="&#x5224;&#x5b9a;&#x5f8c;&#x51e6;&#x7406;"/>
 </node>
 
 <node shape="Hexagon" color="White">
