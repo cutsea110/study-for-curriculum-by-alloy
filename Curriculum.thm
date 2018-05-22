@@ -27,9 +27,7 @@
    <type name="univ"/>
    <type name="&#x4e00;&#x5e74;&#x6b21;"/>
    <type name="&#x4e09;&#x5e74;&#x6b21;"/>
-   <type name="&#x4e09;&#x5e74;&#x6b21;&#x7de8;&#x5165;&#x751f;"/>
    <type name="&#x4e8c;&#x5e74;&#x6b21;"/>
-   <type name="&#x4e8c;&#x5e74;&#x6b21;&#x7de8;&#x5165;&#x751f;"/>
    <type name="&#x4f55;&#x3082;&#x3057;&#x306a;&#x3044;"/>
    <type name="&#x518d;&#x8a66;"/>
    <type name="&#x51fa;&#x5e2d;"/>
@@ -97,10 +95,6 @@
    <type name="&#x706b;6"/>
    <type name="&#x706b;7"/>
    <type name="&#x706b;8"/>
-   <type name="&#x7279;&#x5225;&#x8074;&#x8b1b;&#x751f;"/>
-   <type name="&#x7559;&#x5b66;&#x751f;"/>
-   <type name="&#x79d1;&#x76ee;&#x7b49;&#x5c65;&#x4fee;&#x751f;"/>
-   <type name="&#x8074;&#x8b1b;&#x751f;"/>
    <type name="&#x8a55;&#x4fa1;&#x4e0d;&#x8981;"/>
    <type name="&#x8a55;&#x4fa1;&#x57fa;&#x6e96;"/>
    <type name="&#x8a8d;&#x5b9a;&#x8a55;&#x4fa1;"/>
