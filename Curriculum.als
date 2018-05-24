@@ -438,6 +438,11 @@ run 週複数コマの時間割がつくれる{
 	some t: this/時間割 | #t.曜時 > 1
 }
 
+run 連続コマの時間割がつくれる{
+	some t: this/時間割 | some disj x,x': t.曜時 | some y: 曜日 |
+		some x[y] and some x'[y] and (plus[x[y],1] = x'[y] or minus[x[y],1] = x'[y])
+}
+
 --------------------------
 -- Preds and Assertions
 --------------------------
