@@ -37,66 +37,25 @@
    <type name="&#x5352;&#x696d;"/>
    <type name="&#x5352;&#x7814;&#x53d7;&#x8b1b;&#x5236;&#x9650;"/>
    <type name="&#x56db;&#x5e74;&#x6b21;"/>
-   <type name="&#x571f;1"/>
-   <type name="&#x571f;2"/>
-   <type name="&#x571f;3"/>
-   <type name="&#x571f;4"/>
-   <type name="&#x571f;5"/>
-   <type name="&#x571f;6"/>
-   <type name="&#x571f;7"/>
-   <type name="&#x571f;8"/>
+   <type name="&#x571f;"/>
    <type name="&#x5f8c;&#x671f;"/>
    <type name="&#x5f8c;&#x671f;&#x4e2d;&#x9593;"/>
    <type name="&#x5f8c;&#x671f;&#x672b;"/>
    <type name="&#x5fc5;&#x4fee;"/>
    <type name="&#x6559;&#x5ba4;"/>
    <type name="&#x6559;&#x8077;&#x8981;&#x4ef6;"/>
-   <type name="&#x65e5;1"/>
-   <type name="&#x65e5;2"/>
-   <type name="&#x65e5;3"/>
-   <type name="&#x65e5;4"/>
-   <type name="&#x65e5;5"/>
-   <type name="&#x65e5;6"/>
-   <type name="&#x65e5;7"/>
-   <type name="&#x65e5;8"/>
-   <type name="&#x6708;1"/>
-   <type name="&#x6708;2"/>
-   <type name="&#x6708;3"/>
-   <type name="&#x6708;4"/>
-   <type name="&#x6708;5"/>
-   <type name="&#x6708;6"/>
-   <type name="&#x6708;7"/>
-   <type name="&#x6708;8"/>
-   <type name="&#x6728;1"/>
-   <type name="&#x6728;2"/>
-   <type name="&#x6728;3"/>
-   <type name="&#x6728;4"/>
-   <type name="&#x6728;5"/>
-   <type name="&#x6728;6"/>
-   <type name="&#x6728;7"/>
-   <type name="&#x6728;8"/>
+   <type name="&#x65e5;"/>
+   <type name="&#x6708;"/>
+   <type name="&#x6728;"/>
    <type name="&#x672a;&#x5224;&#x5b9a;"/>
    <type name="&#x6b20;&#x5e2d;"/>
    <type name="&#x6b63;&#x898f;&#x30ab;&#x30ea;&#x30ad;&#x30e5;&#x30e9;&#x30e0;"/>
    <type name="&#x6b63;&#x898f;&#x751f;"/>
    <type name="&#x6bb5;&#x968e;&#x8a55;&#x4fa1;"/>
    <type name="&#x6bce;&#x9031;"/>
-   <type name="&#x6c34;1"/>
-   <type name="&#x6c34;2"/>
-   <type name="&#x6c34;3"/>
-   <type name="&#x6c34;4"/>
-   <type name="&#x6c34;5"/>
-   <type name="&#x6c34;6"/>
-   <type name="&#x6c34;7"/>
-   <type name="&#x6c34;8"/>
-   <type name="&#x706b;1"/>
-   <type name="&#x706b;2"/>
-   <type name="&#x706b;3"/>
-   <type name="&#x706b;4"/>
-   <type name="&#x706b;5"/>
-   <type name="&#x706b;6"/>
-   <type name="&#x706b;7"/>
-   <type name="&#x706b;8"/>
+   <type name="&#x6c34;"/>
+   <type name="&#x706b;"/>
+   <type name="&#x79d1;&#x76ee;&#x6570;"/>
    <type name="&#x8a55;&#x4fa1;&#x4e0d;&#x8981;"/>
    <type name="&#x8a55;&#x4fa1;&#x57fa;&#x6e96;"/>
    <type name="&#x8a8d;&#x5b9a;&#x8a55;&#x4fa1;"/>
@@ -107,14 +66,7 @@
    <type name="&#x901a;&#x671f;"/>
    <type name="&#x9032;&#x7d1a;"/>
    <type name="&#x9078;&#x629e;"/>
-   <type name="&#x91d1;1"/>
-   <type name="&#x91d1;2"/>
-   <type name="&#x91d1;3"/>
-   <type name="&#x91d1;4"/>
-   <type name="&#x91d1;5"/>
-   <type name="&#x91d1;6"/>
-   <type name="&#x91d1;7"/>
-   <type name="&#x91d1;8"/>
+   <type name="&#x91d1;"/>
    <type name="&#x96f6;&#x5e74;&#x6b21;"/>
    <type name="&#x975e;&#x6b63;&#x898f;&#x751f;"/>
    <type name="open$10/Ord"/>
@@ -148,6 +100,7 @@
    <type name="&#x5e74;&#x5ea6;"/>
    <type name="&#x5e74;&#x6b21;"/>
    <type name="&#x6388;&#x696d;&#x56de;"/>
+   <type name="&#x66dc;&#x65e5;"/>
    <type name="&#x671f;"/>
    <type name="&#x79d1;&#x76ee;&#x5c02;&#x9580;&#x533a;&#x5206;"/>
    <type name="&#x8a55;&#x4fa1;&#x30b3;&#x30fc;&#x30c9;"/>
@@ -240,26 +193,16 @@
    <type name="ordering/Ord"/>
 </node>
 
-<node visible="no" hideunconnected="no">
-   <type name="&#x66dc;&#x65e5;&#x6642;&#x9650;"/>
-</node>
-
 <node visible="no" hideunconnected="yes">
    <type name="&#x51fa;&#x6b20;&#x72b6;&#x614b;"/>
    <type name="&#x5fc5;&#x4fee;&#x9078;&#x629e;&#x533a;&#x5206;"/>
 </node>
 
-<edge color="Gray" constraint="no">
-   <relation name="Next"> <type name="ordering/Ord"/> <type name="&#x66dc;&#x65e5;&#x6642;&#x9650;"/> <type name="&#x66dc;&#x65e5;&#x6642;&#x9650;"/> </relation>
-</edge>
-
 <edge color="Gray" visible="no" attribute="yes" constraint="no">
-   <relation name="First"> <type name="ordering/Ord"/> <type name="&#x66dc;&#x65e5;&#x6642;&#x9650;"/> </relation>
    <relation name="&#x51fa;&#x6b20;"> <type name="&#x51fa;&#x5e2d;&#x60c5;&#x5831;"/> <type name="&#x51fa;&#x6b20;&#x72b6;&#x614b;"/> </relation>
    <relation name="&#x5206;&#x91ce;"> <type name="&#x5b66;&#x5247;"/> <type name="&#x5206;&#x91ce;"/> </relation>
    <relation name="&#x5206;&#x985e;"> <type name="&#x5b66;&#x5247;"/> <type name="&#x5206;&#x985e;"/> </relation>
    <relation name="&#x5fc5;&#x4fee;&#x9078;&#x629e;"> <type name="&#x5b66;&#x5247;"/> <type name="&#x5fc5;&#x4fee;&#x9078;&#x629e;&#x533a;&#x5206;"/> </relation>
-   <relation name="&#x66dc;&#x6642;"> <type name="&#x6642;&#x9593;&#x5272;"/> <type name="&#x66dc;&#x65e5;&#x6642;&#x9650;"/> </relation>
 </edge>
 
 <edge layout="no">
@@ -316,7 +259,7 @@
    <relation name="&#x5f37;&#x5236;"> <type name="&#x5b66;&#x5247;"/> <type name="&#x30d5;&#x30e9;&#x30b0;"/> </relation>
    <relation name="&#x5fc5;&#x4fee;&#x5358;&#x4f4d;&#x6570;&#x4e0b;&#x9650;"> <type name="&#x5224;&#x5b9a;&#x6761;&#x4ef6;"/> <type name="&#x5358;&#x4f4d;&#x6570;"/> </relation>
    <relation name="&#x5fc5;&#x4fee;&#x5b8c;&#x4e86;"> <type name="&#x5224;&#x5b9a;&#x6761;&#x4ef6;"/> <type name="&#x30d5;&#x30e9;&#x30b0;"/> </relation>
-   <relation name="&#x5fc5;&#x4fee;&#x79d1;&#x76ee;&#x6570;&#x4e0b;&#x9650;"> <type name="&#x5224;&#x5b9a;&#x6761;&#x4ef6;"/> <type name="&#x5358;&#x4f4d;&#x6570;"/> </relation>
+   <relation name="&#x5fc5;&#x4fee;&#x79d1;&#x76ee;&#x6570;&#x4e0b;&#x9650;"> <type name="&#x5224;&#x5b9a;&#x6761;&#x4ef6;"/> <type name="&#x79d1;&#x76ee;&#x6570;"/> </relation>
    <relation name="&#x62c5;&#x5f53;"> <type name="&#x6642;&#x9593;&#x5272;"/> <type name="&#x6559;&#x54e1;"/> </relation>
    <relation name="&#x6559;&#x5ba4;"> <type name="&#x51fa;&#x5e2d;&#x60c5;&#x5831;"/> <type name="&#x65bd;&#x8a2d;"/> </relation>
    <relation name="&#x6559;&#x5ba4;&#x6642;&#x9593;&#x5272;"> <type name="&#x6642;&#x9593;&#x5272;"/> <type name="&#x65bd;&#x8a2d;"/> </relation>
@@ -335,6 +278,10 @@
    <relation name="&#x9031;&#x9593;&#x9694;&#x533a;&#x5206;"> <type name="&#x6642;&#x9593;&#x5272;"/> <type name="&#x9031;&#x9593;&#x9694;"/> </relation>
    <relation name="&#x9069;&#x7528;&#x8981;&#x4ef6;"> <type name="&#x5b66;&#x5247;"/> <type name="&#x8981;&#x4ef6;"/> </relation>
    <relation name="&#x914d;&#x5f53;&#x5b66;&#x5e74;"> <type name="&#x5b66;&#x5247;"/> <type name="&#x5e74;&#x6b21;"/> </relation>
+</edge>
+
+<edge visible="no" layout="no" attribute="yes">
+   <relation name="&#x66dc;&#x6642;"> <type name="&#x6642;&#x9593;&#x5272;"/> <type name="&#x66dc;&#x65e5;"/> <type name="Int"/> </relation>
 </edge>
 
 <edge visible="no" layout="yes" attribute="yes">
