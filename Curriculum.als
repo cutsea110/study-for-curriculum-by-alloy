@@ -606,6 +606,21 @@ run 隔週時間割が作れる{
 		t.週間隔区分 in (隔週1 + 隔週2)
 }
 
+run 片側ペア時間割の指定ができる{
+	some disj t,t': this/時間割 |
+		t.ペア = t' and no t'.ペア
+}
+
+run 両側ペア時間割の指定ができる{
+	some disj t,t': this/時間割 |
+		t.ペア = t' and t = t'.ペア
+}
+
+run クラスタペア時間割の指定ができる{
+	some disj t,t',t'': this/時間割 |
+		(t + t' + t'') in t.^ペア
+}
+
 run 集中授業の時間割を作れる{
 	some j: this/時間割 |
 		集中 in j.曜時
