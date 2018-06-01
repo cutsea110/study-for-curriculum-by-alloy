@@ -148,6 +148,9 @@
    <type name="open$8/Ord"/>
    <type name="open$9/Ord"/>
    <type name="seq/Int"/>
+   <set name="$&#x62bd;&#x9078;&#x306b;&#x3088;&#x308b;&#x5c65;&#x4fee;&#x767b;&#x9332;&#x304c;&#x3067;&#x304d;&#x308b;_s" type="&#x5b66;&#x751f;"/>
+   <set name="$&#x62bd;&#x9078;&#x306b;&#x3088;&#x308b;&#x5c65;&#x4fee;&#x767b;&#x9332;&#x304c;&#x3067;&#x304d;&#x308b;_t" type="&#x6642;&#x9593;&#x5272;"/>
+   <set name="$&#x62bd;&#x9078;&#x306b;&#x3088;&#x308b;&#x5c65;&#x4fee;&#x767b;&#x9332;&#x304c;&#x3067;&#x304d;&#x308b;_x" type="&#x5c65;&#x4fee;"/>
 </node>
 
 <node hideunconnected="no" shape="Lined Diamond" color="Red">
@@ -296,6 +299,7 @@
    <relation name="&#x5c5e;&#x3059;&#x308b;"> <type name="&#x5224;&#x5b9a;&#x6761;&#x4ef6;"/> <type name="&#x8981;&#x4ef6;&#x5224;&#x5b9a;"/> </relation>
    <relation name="&#x5c5e;&#x3059;&#x308b;"> <type name="&#x5224;&#x5b9a;&#x6761;&#x4ef6;&#x79d1;&#x76ee;&#x5c02;&#x9580;&#x533a;&#x5206;"/> <type name="&#x5224;&#x5b9a;&#x6761;&#x4ef6;"/> </relation>
    <relation name="&#x5c65;&#x4fee;&#x8005;"> <type name="&#x5c65;&#x4fee;"/> <type name="&#x5b66;&#x751f;"/> </relation>
+   <relation name="&#x7531;&#x6765;&#x3059;&#x308b;"> <type name="&#x5c65;&#x4fee;"/> <type name="&#x5c65;&#x4fee;&#x7533;&#x8acb;"/> </relation>
    <relation name="&#x7533;&#x8acb;&#x8005;"> <type name="&#x5c65;&#x4fee;&#x7533;&#x8acb;"/> <type name="&#x5b66;&#x751f;"/> </relation>
 </edge>
 

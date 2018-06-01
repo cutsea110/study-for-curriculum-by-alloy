@@ -250,7 +250,7 @@ sig 履修{
 	履修者 : 学生,
 	履修時間割 : 時間割,
 	再履修 : フラグ,
-	申請 : lone 履修申請,
+	由来する : lone 履修申請,
 }{
 	履修科目[this] in 全履修可能科目[履修者]
 }
@@ -849,17 +849,28 @@ run 時間割に対して学生の履修申請を作ることができる{
 	some t: this/時間割 |
 		some s: this/学生 |
 			some r: 履修申請 |
-				r.申請者 in s and r.申請時間割 in t
+			r.申請者 in s and r.申請時間割 in t
 }
+
 run 履修申請に対応する履修を作ることができる{
 	some r: 履修申請 |
 		some x: 履修 |
-			x.申請 = r
+			x.由来する in r
+}
+
+run 抽選による履修登録ができる{
+	some t: this/時間割 |
+		some s: this/学生 |
+			some x: 履修 |
+				let r = x.由来する |
+					some r and
+					r.申請者 in s and r.申請時間割 in t and
+					x.履修者 in s and x.履修時間割 in t
 }
 
 run 履修申請のない履修を作ることができる{
 	some x: 履修 |
-		no x.申請
+		no x.由来する
 }
 
 run 学則に科目専門区分を定義できる{
