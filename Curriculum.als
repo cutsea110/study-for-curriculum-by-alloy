@@ -284,7 +284,7 @@ sig 事前履修前提科目 extends 履修前提科目{
 	種別 in 履修前提
 }
 
-abstract sig 修得単位数制限{
+sig 修得単位数制限{
 	年度 : 年度,
 	期 : 期,
 	学科 : 学科,
@@ -798,27 +798,23 @@ run 修得単位数制限を定義できる{
 }
 
 run 年度ごとに修得単位数制限を定義できる{
-	all y: this/年度 |
-		some x: 修得単位数制限 |
-			x.年度 in y
+	some x: 修得単位数制限 |
+		some x.年度
 }
 
 run 学科ごとに修得単位数制限を定義できる{
-	all s: this/学科 |
-		some x: 修得単位数制限 |
-			x.学科 in s
+	some x: 修得単位数制限 |
+			some x.学科
 }
 
 run 年次ごとに修得単位数制限を定義できる{
-	all g: this/年次 |
-		some x: 修得単位数制限 |
-			x.学年 = g
+	some x: 修得単位数制限 |
+		some x.学年
 }
 
 run 半期ごとに修得単位数制限を定義できる{
-	all p: (前期 + 後期) |
-		some x: 修得単位数制限 |
-			x.期 in p
+	some x: 修得単位数制限 |
+		x.期 in (前期 + 後期)
 }
 
 run 通期に修得単位数制限を定義できる{
@@ -827,9 +823,8 @@ run 通期に修得単位数制限を定義できる{
 }
 
 run GPA範囲ごとに修得単位数制限を定義できる{
-	all g,g': GPA値 |
-		some x: 修得単位数制限 |
-			x.GPA上限 = g and x.GPA下限 = g'
+	some x: 修得単位数制限 |
+		some x.GPA下限 and some x.GPA上限
 }
 
 run 時間割の履修を抽選にできる{
