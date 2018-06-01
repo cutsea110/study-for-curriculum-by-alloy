@@ -843,8 +843,6 @@ run GPA範囲ごとに修得単位数制限を定義できる{
 		some x.GPA下限 and some x.GPA上限
 }
 
--- 次のとまとめて抽選による履修登録の可能性を記述している
--- TODO: pred化して抽象化したpredにしたい
 run 時間割に対して学生の履修申請を作ることができる{
 	some t: this/時間割 |
 		some s: this/学生 |
