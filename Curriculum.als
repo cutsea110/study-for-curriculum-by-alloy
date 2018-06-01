@@ -316,8 +316,9 @@ fact カリキュラム内の学則で同一科目で評価基準が異なって
 }
 
 fact 重複する履修登録はない{
-	no t:this/時間割 | some s:this/学生 | some disj r,r':履修 |
-		s in r.履修者 and s in r'.履修者 and t in r.履修時間割 and t in r'.履修時間割
+	no g: this/学生 |
+		some disj r,r': g.~履修者 |
+			r.履修時間割 = r'.履修時間割
 }
 
 fact 成績の評価は学則の評価基準の範囲にある必要がある{
@@ -500,13 +501,6 @@ assert 学生に適用されるカリキュラムは一意に決まる{
 	all s: this/学生 | one s.適用
 }
 check 学生に適用されるカリキュラムは一意に決まる
-
-assert 同じ時間割の履修を複数作ることはできない{
-	no g: this/学生 |
-		some disj r,r': g.~履修者 |
-			r.履修時間割 = r'.履修時間割
-}
-check 同じ時間割の履修を複数作ることはできない
 
 run 複数のカリキュラムを定義できる{
 	#カリキュラム > 1
