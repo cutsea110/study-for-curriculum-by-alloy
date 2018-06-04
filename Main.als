@@ -1,15 +1,14 @@
 module Main
 
-private open Base
-private open Curriculum
-private open CurriculumExtensions
-private open Department
-private open Education
-private open Facility
-private open Staff
-private open Student
-private open Timetable
-
+private open Edu/Base
+private open Edu/Curriculum
+private open Edu/CurriculumExtensions
+private open Edu/Department
+private open Edu/Education
+private open Edu/Facility
+private open Edu/Staff
+private open Edu/Student
+private open Edu/Timetable
 
 --------------------------
 -- Global Facts
