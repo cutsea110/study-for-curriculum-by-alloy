@@ -1,6 +1,7 @@
 module Curriculum
 
 private open Base
+private open Department
 private open Facility
 
 abstract sig 評価基準{
@@ -62,13 +63,6 @@ sig 判定条件科目専門区分{
 sig 判定後処理{
 	属する: 要件判定,
 	実行する: 処理,
-}
-
-sig 学部学科{
-	学部 : 学部,
-	課程 : 課程,
-	学科 : 学科,
-	コース : コース,
 }
 
 sig 学則{
