@@ -6,6 +6,7 @@ private open Department
 private open Facility
 private open Staff
 private open Student
+private open Timetable
 
 sig 要件判定{
 	適用: カリキュラム,
@@ -35,19 +36,6 @@ sig 判定後処理{
 }
 
 
-sig シラバス{
-	対応 : 授業
-}
-
-sig 授業{
-	実施年度 : 年度,
-	実施期 : 期,
-	科目 : 科目,
-	代表教員 : 教員,
-}{
-	-- 紐付くシラバスはひとつ
-	one this.~対応
-}
 
 sig 出席情報{
 	時間割 : 時間割,
@@ -313,10 +301,10 @@ pred 卒業要件に対する判定(j: 要件判定){
 -- Specifications and Properties
 --------------------------------------
 
-assert シラバスと授業は1対1である{
+assert シラバスと授業は同数ある{
 	#シラバス = #this/授業
 }
-check シラバスと授業は1対1である
+check シラバスと授業は同数ある
 
 assert 任意の時間割には代表時間割が一意に存在する{
 	all j: this/時間割 | one 代表時間割[j]
