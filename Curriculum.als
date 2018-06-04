@@ -3,6 +3,7 @@ module Curriculum
 private open Base
 private open Department
 private open Facility
+private open Staff
 
 abstract sig 評価基準{
 	取り得る評価 : set 評価コード,
@@ -93,9 +94,6 @@ sig カリキュラム{
 sig 正規カリキュラム extends カリキュラム{
 }{
 	卒業要件 in this.~含まれる.適用要件
-}
-
-sig 教員{
 }
 
 abstract sig 学生{
