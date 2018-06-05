@@ -6,7 +6,7 @@ layout: default
 ```alloy
 private open Base
 private open Facility
-private open Staff
+private open Staff as S
 ```
 
 
@@ -60,4 +60,24 @@ sig 代表時間割 extends 時間割{
 	-- 代表時間割の定義
 	代表 = this
 }
+```
+
+
+```alloy
+fun 講師陣(t: 時間割) : set S/教員{
+	t.(担当 + 副担)
+}
+
+fun 授業内容(t: 時間割) : シラバス{
+	t.授業.~対応
+}
+
+fun 代表時間割(j: 時間割) : set 時間割{
+	j.*代表 & 代表時間割
+}
+
+fun 合併時間割(j: 時間割) : set 時間割{
+	代表時間割[j].*(~代表)
+}
+
 ```

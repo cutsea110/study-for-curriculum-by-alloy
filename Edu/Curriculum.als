@@ -8,7 +8,7 @@ private open Base
 private open Department
 
 open EvalMethod
-open Requirement
+open Requirement as R
 ```
 
 ```alloy
@@ -69,5 +69,22 @@ sig 判定条件科目専門区分{
 sig 判定後処理{
 	属する: 要件判定,
 	実行する: 処理,
+}
+```
+
+
+```alloy
+fun 判定対象要件(j: 要件判定) : set R/要件{
+	j.~属する.~属する.対象要件
+}
+
+fun 後処理(j: 要件判定) : set 処理{
+	j.~属する.実行する
+}
+```
+
+```alloy
+pred 卒業要件に対する判定(j: 要件判定){
+	判定対象要件[j] in 卒業要件
 }
 ```
