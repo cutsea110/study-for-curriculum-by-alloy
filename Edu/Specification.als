@@ -1,4 +1,4 @@
-module Main
+module Specification
 
 private open Base
 private open Curriculum
