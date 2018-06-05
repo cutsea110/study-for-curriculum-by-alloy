@@ -1,5 +1,9 @@
-module Specification
+---
+title: Specification
+layout: default
+---
 
+```alloy
 private open Base
 private open Curriculum
 private open CurriculumExtensions
@@ -9,11 +13,9 @@ private open Facility
 private open Staff
 private open Student
 private open Timetable
+```
 
---------------------------------------
--- Specifications and Properties
---------------------------------------
-
+```alloy
 assert シラバスと授業は同数ある{
 	#シラバス = #this/授業
 }
@@ -462,13 +464,11 @@ run 休講が登録できる{
 run 補講が登録できる{
 	1 = 0
 }
+```
 
---------------------------
--- Preds and Assertions
---------------------------
-
+```alloy
 run 例示せよ{
 	-- 見た目調整の制限
 	all j: this/時間割 | #j.曜時 <= 2
 }
-
+```
