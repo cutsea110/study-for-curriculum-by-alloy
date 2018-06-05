@@ -7,6 +7,7 @@ layout: default
 private open Base
 private open Curriculum
 private open Student
+private open Timetable as T
 ```
 
 ```alloy
@@ -46,4 +47,20 @@ sig 修得単位数制限{
 	GPA下限 : GPA値,
 	単位数上限 : 単位数,
 }
+```
+
+```alloy
+
+fun 振替履修可能科目(s: 学生) : set Base/科目{
+	s.~(振替科目 <: 対象).元科目
+}
+
+fun 全履修可能科目(s: 学生) : set Base/科目{
+	基本履修可能科目[s] + 振替履修可能科目[s]
+}
+
+fun 全履修可能時間割(s: 学生) : set T/時間割{
+	全履修可能科目[s].~科目.~授業
+}
+
 ```
