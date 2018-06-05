@@ -10,7 +10,7 @@ private open CurriculumExtensions
 private open Department
 private open Facility as F
 private open Staff as S
-private open Student
+private open Student as G
 private open Timetable as T
 ```
 
@@ -54,6 +54,27 @@ sig 成績{
 }
 ```
 
+```alloy
+fact 重複する履修登録はない{
+	no g: this/学生 |
+		some disj r,r': g.~履修者 |
+			r.履修時間割 = r'.履修時間割
+}
+
+fact 成績の評価は学則の評価基準の範囲にある必要がある{
+	all s: 成績 | let rs = {r : s.学生.適用.~含まれる | r.科目 = s.科目} |
+		s.評価 in rs.評価基準.取り得る評価
+}
+
+fact 単位修得できる成績は学生科目ごとに高々ひとつしかない{
+	no s: G/学生 | some disj e,e': s.~(成績 <: 学生) |
+		e.科目 = e'.科目 and 単位になる[e] and 単位になる[e']
+}
+
+fact 履修の科目は履修者の全履修可能科目の範囲内にある{
+	all r: 履修 | 履修科目[r] in 全履修可能科目[r.履修者]
+}
+```
 
 ```alloy
 fun 評価者(r: 履修) : S/教員{
