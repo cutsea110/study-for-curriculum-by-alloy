@@ -4,8 +4,6 @@ layout: default
 ---
 
 ```alloy
-private open util/time
-
 private open Base
 private open Department
 private open Curriculum as C
@@ -45,10 +43,12 @@ sig 非正規生 extends 学生{
 }
 
 sig 異動履歴{
-	開始 : Time,
-	修了 : Time,
+	開始日 : Time,
+	終了日 : Time,
 	種別 : 異動コード,
 	理由 : 異動理由,
+}{
+	lte[開始日, 終了日]
 }
 
 ```

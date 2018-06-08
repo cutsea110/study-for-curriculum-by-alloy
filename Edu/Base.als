@@ -5,6 +5,7 @@ layout: default
 
 ```alloy
 open util/boolean
+open util/time
 ```
 
 ```alloy
