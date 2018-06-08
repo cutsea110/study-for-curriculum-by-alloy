@@ -4,6 +4,8 @@ layout: default
 ---
 
 ```alloy
+private open util/time
+
 private open Base
 private open Department
 private open Curriculum as C
@@ -11,6 +13,10 @@ private open Requirement
 private open Timetable as T
 ```
 
+```alloy
+enum 異動コード { 通常, 休学中, 退学, 復学, 除籍, 再入学, 入学辞退, 卒業, 停学中, 入学前 }
+enum 異動理由 { 空白, 一身上の都合, 経済的理由, 進路変更, 就職, 海外留学, 病気療養, その他 }
+```
 
 ```alloy
 abstract sig 学生{
@@ -24,6 +30,8 @@ abstract sig 学生{
 	入学年度 : 年度,
 	入学期 : 期,
 	入学学年 : 年次,
+
+	異動歴 : seq 異動履歴,
 }
 
 sig 正規生 extends 学生{
@@ -34,6 +42,13 @@ sig 正規生 extends 学生{
 sig 非正規生 extends 学生{
 }{
 	卒業進級対象 = False
+}
+
+sig 異動履歴{
+	開始 : Time,
+	修了 : Time,
+	種別 : 異動コード,
+	理由 : 異動理由,
 }
 
 ```
@@ -91,6 +106,12 @@ pred 任意の要件を取得可能なように学則を構成できる{
 		g.(教職 + 資格) in 修得可能学則[g].適用要件
 }
 run 任意の要件を取得可能なように学則を構成できる
+
+pred 学生の異動履歴を残せる{
+	some g : 学生 |
+		some g.異動歴
+}
+run 学生の異動履歴を残せる
 
 ```
 
