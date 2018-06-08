@@ -87,9 +87,9 @@ pred init(s: 学生) {
 	no s.異動歴
 }
 
-fact traces{
-	init [first]
-	all s: 学生 - last | let s' = next[s] |
+pred traces{
+	first.init
+	all s: 学生 - last | let s' = s.next |
 		some x: 異動履歴 |
 			入学許可手続き[s,s',x] or
 			入学手続き[s,s',x] or
@@ -109,5 +109,5 @@ fact traces{
 			復籍手続き[s,s',x]
 }
 
-run {} for 5
+run traces for 5
 ```
