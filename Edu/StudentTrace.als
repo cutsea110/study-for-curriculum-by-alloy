@@ -87,7 +87,7 @@ pred init(s: 学生) {
 	no s.異動歴
 }
 
-pred traces{
+pred 学生の異動を行う{
 	first.init
 	all s: 学生 - last | let s' = s.next |
 		some x: 異動履歴 |
@@ -109,5 +109,5 @@ pred traces{
 			復籍手続き[s,s',x]
 }
 
-run traces for 5
+run 学生の異動を行う for 5
 ```
