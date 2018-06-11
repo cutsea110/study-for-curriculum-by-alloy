@@ -13,6 +13,7 @@ private open Facility
 private open Staff
 private open Student
 private open Timetable
+private open TimetableExtensions
 ```
 
 ```alloy
@@ -28,6 +29,10 @@ run 複数の時間割が同じ教室を共有できる
 run 隔週時間割が作れる
 run 集中授業の時間割を作れる
 run 合併時間割に異なる科目の時間割を含めることができる
+
+-- TimetableExtensions
+run 休講を登録できる
+run 補講を登録できる
 
 -- Curriculum
 run 複数のカリキュラムを定義できる
@@ -121,13 +126,6 @@ run 施設管理ができる{
 	1 = 0
 }
 
-run 休講が登録できる{
-	1 = 0
-}
-
-run 補講が登録できる{
-	1 = 0
-}
 ```
 
 ```alloy
