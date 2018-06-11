@@ -10,6 +10,7 @@ private open CurriculumExtensions
 private open Department
 private open Education
 private open Facility
+private open HealthMedical
 private open Staff
 private open Student
 private open Timetable
@@ -123,6 +124,10 @@ run 履修申請のない履修を作ることができる
 run 事前修得前提科目が設定された科目を履修できる
 run 事前履修前提科目が設定された科目を履修できる
 run 科目セットの時間割を履修できる
+
+-- HealthMedical
+run 学生ごと年度ごとに健康診断データを管理できる
+
 
 run 年度ごとに学年歴を定義できる{
 	1 = 0
