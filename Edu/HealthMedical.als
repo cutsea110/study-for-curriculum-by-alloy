@@ -4,8 +4,15 @@ layout: default
 ---
 
 ```alloy
-private open Base
+private open Base as B
 private open Student
+```
+
+```alloy
+private enum 検診種別 { 胸部, 視力, 聴力, 身体, 糖尿, 検査 }
+
+private sig 医師{
+}
 ```
 
 ```alloy
@@ -13,41 +20,66 @@ sig 学生健康診断{
 	対象 : 学生,
 	年度 : 年度,
 	検診日 : Time,
-	医師名 : String,
+	医師名 : 医師,
 	発行可 : Bool,
 }
 
-abstract sig 検診{
+private abstract sig 検診{
 	対象 : 学生,
 	年度 : 年度,
 	検査日 : Time,
+	種別 : 検診種別,
 }
 
-sig 胸部 extends 検診{
+sig 胸部検診 extends 検診{
+}{
+	種別 = 胸部
 }
 
-sig 視力 extends 検診{
+sig 視力検診 extends 検診{
+}{
+	種別 = 視力
 }
 
-sig 聴力 extends 検診{
+sig 聴力検診 extends 検診{
+}{
+	種別 = 聴力
 }
 
-sig 身体 extends 検診{
+sig 身体検診 extends 検診{
+}{
+	種別 = 身体
 }
 
-sig 糖尿 extends 検診{
+sig 糖尿検診 extends 検診{
+}{
+	種別 = 糖尿
 }
 
-sig 検査 extends 検診{
+sig 検査検診 extends 検診{
+}{
+	種別 = 検査
 }
 ```
 
 ```alloy
-pred 学生ごと年度ごとに健康診断データを管理できる{
-	all x: 学生健康診断 |
-		some x.年度 and some x.対象
+pred 学生ごとに健康診断データを管理できる{
+	some disj x,x': 学生健康診断 |
+		x.対象 != x'.対象
 }
-run 学生ごと年度ごとに健康診断データを管理できる
+run 学生ごとに健康診断データを管理できる
+
+pred 学生は年度ごとに健康診断データを保持できる{
+	some g: 学生 |
+		some disj x,x': 学生健康診断 |
+			(x.対象 + x'.対象) in g and x.年度 != x'.年度
+}
+run 学生は年度ごとに健康診断データを保持できる
+
+pred 学生は同一年度に複数の健康診断データを保持できる{
+	some g: 学生 |
+		some disj x,x': 学生健康診断 |
+			(x.対象 + x'.対象) in g and x.年度 = x'.年度
+}
+run 学生は同一年度に複数の健康診断データを保持できる
 ```
-
-
