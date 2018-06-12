@@ -110,4 +110,18 @@ pred 学生の異動を行う{
 }
 
 run 学生の異動を行う for 5
+
+pred 在籍学生を卒業させることができる{
+	学生の異動を行う and
+	some disj s,s': 学生 |
+		在籍状態にある[s] and s'.状態 in 卒業済 and s' in s.nexts
+}
+run 在籍学生を卒業させることができる for 5
+
+pred 除籍になった学籍を在籍に戻せる{
+	学生の異動を行う and
+	some disj s,s': 学生 |
+		除籍状態にある[s] and 在籍状態にある[s'] and s' in s.nexts
+}
+run 除籍になった学籍を在籍に戻せる for 5
 ```

@@ -13,6 +13,7 @@ private open Facility
 private open HealthMedical
 private open Staff
 private open Student
+private open StudentTrace
 private open Timetable
 private open TimetableExtensions
 ```
@@ -92,6 +93,10 @@ run 学生は複数の教職要件を取得申請できる
 run 学生は資格要件を取得申請できる
 run 学生は複数の資格要件を取得申請できる
 run 任意の要件を取得可能なように学則を構成できる
+
+-- StudentTrace
+run 在籍学生を卒業させることができる for 5
+run 除籍になった学籍を在籍に戻せる for 5
 
 -- Education
 check 任意の成績の科目は適用カリキュラムの学則に含まれる
