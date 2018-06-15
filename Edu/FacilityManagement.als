@@ -41,7 +41,8 @@ sig 施設管理{
 ```alloy
 pred 特定日時の施設管理ができる{
 	some x: 施設管理 |
-		some x.日付 and some x.場所
+		some x.日付 and some x.曜時 and some x.場所
 }
 run 特定日時の施設管理ができる
+
 ```
