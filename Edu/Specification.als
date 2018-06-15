@@ -10,6 +10,7 @@ private open CurriculumExtensions
 private open Department
 private open Education
 private open Facility
+private open FacilityManagement
 private open HealthMedical
 private open Staff
 private open Student
@@ -129,6 +130,9 @@ run 履修申請のない履修を作ることができる
 run 事前修得前提科目が設定された科目を履修できる
 run 事前履修前提科目が設定された科目を履修できる
 run 科目セットの時間割を履修できる
+
+-- FacilityManagement
+run 特定日時の施設管理ができる
 
 -- HealthMedical
 run 学生ごとに健康診断データを管理できる
