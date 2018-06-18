@@ -1,64 +1,91 @@
-module Admission
+---
+title: Admission
+layout: default
+---
 
-enum 年度 { Y2016, Y2017 }
-enum 学部課程学科コース{
-  経営学科,
-  経済学科
+```alloy
+private open Base
+private open Department
+private open DNC
+
+private open util/time
+```
+
+```alloy
+enum 検査方法 { 学力, 調査書, 小論文, 面接, 実技 }
+
+abstract sig 試験源{
 }
-enum 定員 {N80, N100 }
-enum code { X01, X02 }
-enum desired_order { D1, D2 }
-enum 評価方法 {A, B} -- 重みとか調整点とかもろもろ
-enum 制度種別 {前期, 中期}
-enum 得点 {P60, P80}
+one sig 試験源_手入力 extends 試験源{
+}
+sig 試験源_大学入試センター extends 試験源{
+}
+sig 試験源_評定平均 extends 試験源{
+}
 
-sig 入試制度{
-  年度: one 年度,
-  制度: one 制度種別,
+sig 入学方式{
+}
+sig 入学経路{
+}
+```
+
+```alloy
+sig 入試{
+	年度 : 年度,
+	期 : 入学期,
+	入学学年 : 年次,
+	方式 : 入学方式,
+	経路 : 入学経路,
+	センター試験区分 : 大学入試センター試験区分,
+	センター成績請求区分 : 大学入試センター成績請求区分,
+
+	募集 : set 入試募集,
 }{
-  -- 1つ以上は募集がある.
-  some this.~募集
+	募集.~@募集 in this
 }
 
 sig 入試募集{
-  募集: one 入試制度,
-  学科コース: one 学部課程学科コース,
-  募集定員: 定員,
+	募集学科 : 学部学科,
+	募集定員 : Int,
+
+	申し込み受付開始日 : Time,
+	申し込み受付終了日 : Time,
+	試験日 : Time,
+	合格発表日 : Time,
+	入学手続き受付開始日 : Time,
+	入学手続き〆切日 : Time,
+
+	評価基準 : set 評価項目,
 }{
-  -- 1つ以上は評価基準がある.
-  some this.~適用
+	some this.~募集
+	評価基準.~@評価基準 in this
+	募集定員 >= 0
 }
 
-sig 評価項目 {
-  適用: one 入試募集,
-  科目コード: code,
-  評価関数: one 評価方法,
-}
+sig 評価項目{
+	科目 : 科目,
 
-sig 志願者{
-}{
-  -- 1つ以上出願がある,
-  some this.~出願者
-}
+	検査方法 : 検査方法,
+	試験源 : 試験源,
 
-sig 出願{
-  出願者: one 志願者,
-}{
-  -- 1つ以上は出願詳細がある
-  some this.~orig
+	-- TODO: 評価換算関数とかグループ化とか
 }
+```
 
-sig 出願詳細{
-  orig: one 出願,
-  希望: one 入試募集,
-  希望順位: desired_order,
+```alloy
+assert 入試に紐付かない入試募集は存在しない{
+	no r: 入試募集 |
+		no r.~募集
 }
+check 入試に紐付かない入試募集は存在しない
 
-sig 成績{
-  受験: one 出願,
-  科目コード: code,
-  素点: one 得点,
+assert 入試募集は複数の入試に共有されることはない{
+	no r: 入試募集 |
+		some disj a,a': 入試 |
+			r in a.募集 and r in a'.募集
 }
+check 入試募集は複数の入試に共有されることはない
+```
 
 ---------------------
 -- ファクト関係
