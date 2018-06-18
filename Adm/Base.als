@@ -4,12 +4,9 @@ layout: default
 ---
 
 ```alloy
-open util/boolean
-```
-
-```alloy
 enum 入学期 { 春入学, 秋入学 }
 enum 年次 { 零年次, 一年次, 二年次, 三年次, 四年次 }
+enum 合否区分 { 未判定, 合格, 不合格, 対象外 }
 ```
 
 ```alloy
