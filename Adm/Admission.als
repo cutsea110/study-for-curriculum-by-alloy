@@ -6,7 +6,6 @@ layout: default
 ```alloy
 private open Base
 private open Department
-private open DNC
 
 private open util/time
 ```
@@ -16,11 +15,15 @@ enum 検査方法 { 学力, 調査書, 小論文, 面接, 実技 }
 
 abstract sig 試験源{
 }
-one sig 試験源_手入力 extends 試験源{
+one sig 内部試験 extends 試験源{
 }
-sig 試験源_大学入試センター extends 試験源{
+sig 評定平均 extends 試験源{
 }
-sig 試験源_評定平均 extends 試験源{
+sig 外部試験 extends 試験源{
+}
+sig 大学入試センター試験科目 extends 外部試験{
+}
+one sig TOEIC extends 外部試験{
 }
 
 sig 入学方式{
@@ -38,8 +41,6 @@ sig 入試{
 	入学学年 : 年次,
 	方式 : 入学方式,
 	経路 : 入学経路,
-	センター試験区分 : 大学入試センター試験区分,
-	センター成績請求区分 : 大学入試センター成績請求区分,
 
 	募集 : set 入試募集,
 }{
@@ -137,6 +138,18 @@ pred 同一科目を異なる入試募集の評価項目にできる{
 			s in r.評価基準.科目 and s in r'.評価基準.科目
 }
 run 同一科目を異なる入試募集の評価項目にできる
+
+pred 外部試験を評価項目にできる{
+	some x: 評価項目 |
+		x.試験源 in 外部試験
+}
+run 外部試験を評価項目にできる
+
+pred 大学入試センター試験科目を評価項目にできる{
+	some x: 評価項目 |
+		x.試験源 in 大学入試センター試験科目
+}
+run 大学入試センター試験科目を評価項目にできる
 ```
 
 ```alloy
