@@ -6,6 +6,7 @@ layout: default
 ```alloy
 private open Base
 private open Admission
+private open Department
 
 private open util/boolean
 ```
@@ -132,6 +133,12 @@ pred 同じ受験番号の成績でも募集ごとに評価が異なる{
 }
 run 同じ受験番号の成績でも募集ごとに評価が異なる
 
+pred 志願者は複数の学部学科に合格できる{
+	some a: 志願者 |
+		#合格している出願詳細[a].募集学科 > 1
+}
+run 志願者は複数の学部学科に合格できる
+
 pred 志願者を入学手続き完了にできる{
 	some a: 志願者 |
 		入学手続き完了している[a]
@@ -146,6 +153,9 @@ fun 出願詳細(a: 志願者) : set 出願詳細{
 fun 出願している入試募集(a: 志願者) : set 入試募集{
 	a.出願詳細.応募
 }
+fun 募集学科(a: 出願詳細) : 学部学科{
+	a.応募.募集学科
+}
 fun 出願している入試(a: 志願者) : set 入試{
 	a.出願している入試募集.~募集
 }
@@ -154,6 +164,9 @@ fun 入試募集(a: 出願) : set 入試募集{
 }
 fun 出願詳細(a: 出願, r: 入試募集) : 出願詳細{
 	{d: a.詳細 | d.応募 = r}
+}
+fun 合格している出願詳細(a: 志願者) : set 出願詳細{
+	{d: a.出願詳細 | d.合否 in 合格}
 }
 pred 入学手続き完了している(a: 志願者){
 	a.出願詳細.手続き完了 = True
