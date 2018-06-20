@@ -8,6 +8,7 @@ private open Base
 private open Department
 private open Curriculum as C
 private open Requirement
+private open Staff
 private open Timetable as T
 ```
 
@@ -41,6 +42,9 @@ abstract sig 学生{
 
 	状態 : 学籍区分,
 	異動歴 : set 異動履歴,
+
+	ゼミ担当 : lone 教員,
+	ゼミ授業 : lone T/授業,
 
 	保護者 : lone 関係者,
 	保証人 : lone 関係者,
