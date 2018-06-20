@@ -56,7 +56,7 @@ sig 入試募集{
 }{
 	some this.~募集
 	評価基準.~@評価基準 in this
-	募集定員 >= 0
+	nonneg[募集定員]
 }
 
 sig 評価項目{
