@@ -46,8 +46,6 @@ abstract sig 学生{
 	ゼミ担当 : lone 教員,
 	ゼミ授業 : lone T/授業,
 
-	チューター : lone 教員,
-
 	アドバイザ : set 教員,
 
 	保護者 : lone 関係者,
@@ -183,11 +181,6 @@ pred 学生にゼミ担当教員を設定できる{
 	some s: 学生 | some s.ゼミ担当 and s.ゼミ担当 in 教員
 }
 run 学生にゼミ担当教員を設定できる
-
-pred 学生にチューターを設定できる{
-	some s: 学生 | some s.チューター and s.チューター in 教員
-}
-run 学生にチューターを設定できる
 
 pred 学生にアドバイザを設定できる{
 	some s: 学生 |  some s.アドバイザ and s.アドバイザ in 教員
