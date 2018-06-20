@@ -12,9 +12,16 @@ open Requirement as R
 ```
 
 ```alloy
+sig ディプロマポリシー{
+}
+
 sig カリキュラム{
 	年度 : 年度,
 	対象学科 : 学部学科,
+	DP : ディプロマポリシー,
+}{
+	-- これは正義か?
+	DP.~@DP in this
 }
 
 sig 学則{
