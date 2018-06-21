@@ -12,6 +12,7 @@ private open Education
 private open Facility
 private open FacilityManagement
 private open HealthMedical
+private open Positions
 private open Staff
 private open Student
 private open StudentTrace
@@ -109,6 +110,12 @@ run 学生の保証人を登録できる
 run 学生の保証人と保護者に異なる人を登録できる
 run 学生の保証人と保護者に同じ人を登録できる
 run 学生にゼミ担当教員を設定できる
+
+-- Positions
+run 教員にTAやSAやRAなどのアシスタントをつけることができる
+run 学生にチューターやメンターをつけることができる
+run 学生にアドバイザや英式Tutorをつけることができる
+run 学生に複数名のアドバイザをつけることができる
 
 -- StudentTrace
 run 在籍学生を卒業させることができる for 5
