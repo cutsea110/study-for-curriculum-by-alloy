@@ -1,0 +1,1 @@
+../../Edu/Timetable.als
