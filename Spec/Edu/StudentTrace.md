@@ -1,1 +1,0 @@
-../../Edu/StudentTrace.als

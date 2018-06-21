@@ -1,1 +1,0 @@
-../../Adm/Specification.als

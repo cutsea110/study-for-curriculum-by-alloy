@@ -1,1 +1,0 @@
-../../Edu/CurriculumExtensions.als

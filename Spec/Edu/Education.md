@@ -1,1 +1,0 @@
-../../Edu/Education.als
