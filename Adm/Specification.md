@@ -14,7 +14,7 @@ private open Admission
 private open Applicant
 ```
 
-## 仕様
+## 仕様一覧
 
 入試および入試募集、評価項目など仕様は以下の通り.
 
