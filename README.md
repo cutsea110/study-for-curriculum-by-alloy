@@ -1,4 +1,10 @@
-for work
+# 準備
+
+TeXLiveとpandocをインストールする必要がある.
+
+# PDFの生成
+
+以下のコマンドを実行する.
 
 $ cat Adm/Base.md Adm/Department.md Adm/Admission.md Adm/Applicant.md Adm/Specification.md | pandoc -f markdown -o 入試システム仕様および基本設計書.pdf -V documentclass=ltjltxdoc -H preanble.tex --pdf-engine=lualatex --toc -N
 
