@@ -36,12 +36,16 @@ sig 顧客 extends 学生{
 学費は商品マスタとして定義する.
 
 ```alloy
-sig 学費{
+abstract sig 費目{
+}
+sig 学費目 extends 費目{
 	年度 : lone 年度,
 	期 : lone 期,
 	学部学科 : lone 学部学科,
 	学年 : lone 年次,
 	金額 : Int,
+}
+one sig 雑費目 extends 費目{
 }
 ```
 
@@ -61,7 +65,7 @@ sig 売上{
 sig 売上明細{
 	売上 : 売上,
 
-	種別 : 学費,
+	種別 : 費目,
 	金額 : Int,
 }
 ```
