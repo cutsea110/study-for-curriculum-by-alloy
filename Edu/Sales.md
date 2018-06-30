@@ -28,7 +28,6 @@ private open util/time
 ```alloy
 sig 顧客 extends 学生{
 	請求先 : lone 関係者,
-	回収先 : lone 関係者,
 }
 ```
 
