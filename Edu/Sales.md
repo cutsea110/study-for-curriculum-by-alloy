@@ -200,7 +200,7 @@ run 期ごとに売上を立てることができる
 pred 売上に対して分割請求することができる{
 	some disj i,i': this/請求 |
 		let s  = i.請求明細.対象売上, s' = i'.請求明細.対象売上 |
-			one s and one s' and s = s'
+			some s and some s' and s = s'
 }
 run 売上に対して分割請求することができる
 
