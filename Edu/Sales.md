@@ -12,7 +12,7 @@ title: Sales
 ```alloy
 private open Base
 private open Department
-private open Student
+private open Student as G
 
 private open util/time
 ```
@@ -185,3 +185,18 @@ sig 学費納付計画{
 
 上記モデルの満足すべき仕様を以下に示す.
 これらの検証により基本設計としてのモデルが正当であることを保証する.
+
+```alloy
+pred 学生に対して学費納付計画を立てることができる{
+	some g: G/学生 |
+		some g.~(学費納付計画 <: 学生)
+}
+run 学生に対して学費納付計画を立てることができる
+
+pred 学費の支払い計画として分納を計画することができる{
+	some p: 支払い計画 |
+		#p.計画 > 1 and #p.計画.納付期限 > 1
+}
+run 学費の支払い計画として分納を計画することができる
+```
+
