@@ -19,6 +19,7 @@ private open Facility
 private open FacilityManagement
 private open HealthMedical
 private open Positions
+private open Sales
 private open Staff
 private open Student
 private open StudentTrace
@@ -212,3 +213,14 @@ run 学生は同一年度に複数の健康診断データを保持できる
 run 学生は年度ごとに検診データを保持できる
 run 学生は同一年度に同じ種類の検診データを複数保持できる
 ```
+
+学費についての仕様は以下の通り.
+
+```alloy
+run 年度一括で売上を立てることができる
+run 期ごとに売上を立てることができる
+run 売上に対して分割請求することができる
+run 学生に対して学費納付計画を立てることができる
+run 学費の支払い計画として分納を計画することができる
+```
+
