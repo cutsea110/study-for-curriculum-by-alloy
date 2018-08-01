@@ -63,9 +63,9 @@ sig 売上明細{
 	売上額 : Int,
 	減免額 : Int,
 	充当額 : Int,
-	初回請求日 : Time,
-	最終請求日 : Time,
-	消込日 : Time,
+	初回請求日 : lone Time,
+	最終請求日 : lone Time,
+	消込日 : lone Time,
 }
 ```
 
@@ -87,7 +87,7 @@ sig 請求明細{
 	請求額 : Int,
 	減免額 : Int,
 	充当額 : Int,
-	消込日 : Time,
+	消込日 : lone Time,
 }
 ```
 
@@ -109,7 +109,7 @@ sig 入金{
 
 	顧客 : lone 顧客,
 	充当額 : Int,
-	消込日 : Time,
+	消込日 : lone Time,
 }
 ```
 
