@@ -194,6 +194,12 @@ assert 異なる売上に含まれる売上明細はない{
 			d in s.売上明細 and d in s'.売上明細
 }
 check 異なる売上に含まれる売上明細はない
+assert 異なる請求に含まれる請求明細はない{
+	no d: this/請求明細 |
+		some disj r,r': this/請求 |
+			d in r.請求明細 and d in r'.請求明細
+}
+check 異なる請求に含まれる請求明細はない
 
 pred 年度一括で売上を立てることができる{
 	some {s: this/売上 | s.期 = 通期}
