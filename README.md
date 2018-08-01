@@ -4,6 +4,7 @@
 
 Markdownですが実体はAlloyAnalyzerのliterateファイルです.
 AlloyAnalyzer 5.0以降が必要.(実際には.mdのモジュールインポートが可能なのはSNAPSHOT-20180618以降になります)
+SNAPSHOTは[AlloyToolsのリポジトリの5.0.0-SNAPSHOT](https://oss.sonatype.org/content/repositories/snapshots/org/alloytools/org.alloytools.alloy.dist/5.0.0-SNAPSHOT/)からダウンロードしてください.
 
 ## 仕様のドキュメント生成について
 
