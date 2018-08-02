@@ -241,6 +241,20 @@ pred 全て請求済(s: this/売上){
 	all d: s.売上明細 |
 		d.請求済
 }
+pred 入金済(d: this/請求明細){
+	some d.消込日
+}
+pred 全て入金済(i: this/請求){
+	all d: i.請求明細 |
+		d.入金済
+}
+pred 入金済(d: this/売上明細){
+	some d.消込日
+}
+pred 全て入金済(s: this/売上){
+	all d: s.売上明細 |
+		d.入金済
+}
 
 fun 請求明細(i: this/請求) : set 請求明細{
 	i.~請求
