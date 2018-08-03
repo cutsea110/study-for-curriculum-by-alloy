@@ -6,6 +6,12 @@ title: Facility
 
 大学施設を定義する.
 
+## 依存モデル
+
+```alloy
+private open Base
+```
+
 ## 施設および教室
 
 主に施設管理を目的として定義する.
@@ -16,5 +22,6 @@ abstract sig 施設{
 }
 
 sig 教室 extends 施設{
+	キャンパス : キャンパス,
 }
 ```
