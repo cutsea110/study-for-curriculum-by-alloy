@@ -1,5 +1,5 @@
 ---
-title: Sales
+title: Fee
 ---
 
 # 学費の概要

@@ -17,9 +17,9 @@ private open Department
 private open Education
 private open Facility
 private open FacilityManagement
+private open Fee
 private open HealthMedical
 private open Positions
-private open Sales
 private open Staff
 private open Student
 private open StudentTrace
