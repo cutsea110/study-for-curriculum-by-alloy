@@ -22,7 +22,7 @@ private open util/time
 上位のモデルで使用する列挙値を定義する.
 
 ```alloy
-enum 特待生 { 特S, 特A, 特B, 特C }
+enum 特待生区分 { 特S, 特A, 特B, 特C }
 sig 勘定科目{
 }
 sig 費目{
@@ -37,7 +37,7 @@ sig 費目{
 
 ```alloy
 sig 顧客 extends 学生{
-	特待区分 : lone 特待生,
+	特待区分 : lone 特待生区分,
 
 	請求先 : lone 関係者,
 }
@@ -130,7 +130,7 @@ sig 学費基本{
 	入学期 : 期,
 
 	学生区分 : 学生区分,
-	特待区分 : lone 特待生,
+	特待区分 : lone 特待生区分,
 
 	費目 : 費目,
 	金額 : Int,
